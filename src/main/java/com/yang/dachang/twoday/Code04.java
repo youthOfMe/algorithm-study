@@ -21,6 +21,9 @@ public class Code04 {
                 return mid;
             }
         }
+        if (left == right) {
+            return left;
+        }
         return -1;
     }
 }
