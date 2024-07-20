@@ -1,4 +1,4 @@
-package com.yang.dachang.oneday;
+package com.yang.dachang.timet24t7t16;
 
 // 一个数组中有一种数出现了奇数次，其他数都出现了偶数次，怎么找到并打印这个数？
 public class Code03 {

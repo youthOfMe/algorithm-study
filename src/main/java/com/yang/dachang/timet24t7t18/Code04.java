@@ -1,4 +1,4 @@
-package com.yang.dachang.twoday;
+package com.yang.dachang.timet24t7t18;
 
 public class Code04 {
     // 二分法查找数组种指定数的角标
