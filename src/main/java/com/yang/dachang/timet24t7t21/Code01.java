@@ -34,6 +34,7 @@ public class Code01 {
                 break;
             }
 
+
             mergeSize = mergeSize << 1;
         }
     }
