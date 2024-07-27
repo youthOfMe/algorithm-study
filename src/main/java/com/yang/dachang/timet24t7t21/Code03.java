@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Code03 {
     public static void main(String[] args) {
         // int[] arr = {1, 5, 8, 9, 54, 456, 5, 6, 22, 35, 12, 50, 0};
-        int[] arr = {3, 1, 0, 4, 3, 1};
+        int[] arr = {3, 1, 0, 4, 3, 1, 6};
         System.out.println(getTarget(arr, 0, arr.length - 1));
         System.out.println(Arrays.toString(arr));
     }
