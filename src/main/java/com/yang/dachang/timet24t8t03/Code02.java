@@ -2,6 +2,9 @@ package com.yang.dachang.timet24t8t03;
 
 import java.util.Arrays;
 
+/**
+ * 2.0 -> 3.0
+ */
 public class Code02 {
 
     public static void main(String[] args) {
@@ -20,6 +23,7 @@ public class Code02 {
             return;
         }
 
+        swap(arr, left + (int) (Math.random() * (right - left + 1)), right);
         int[] quickSort = quickSort(arr, left, right);
         getTarget(arr, left, quickSort[0]);
         getTarget(arr, quickSort[1], right);
