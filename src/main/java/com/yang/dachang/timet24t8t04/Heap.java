@@ -48,7 +48,7 @@ public class Heap {
     private void heapify(int index) {
         while (index * 2 + 1 <= heapSize) {
             int lastgest = index * 2 + 2 <= heapSize && heapWrap[index * 2 + 1] > heapWrap[index * 2 + 2] ? index * 2 + 1 : index * 2 + 2;
-            lastgest = heapWrap[index] > heapWrap[lastgest] ? index : lastgest;
+            lastgest = heapWrap[index] >= heapWrap[lastgest] ? index : lastgest;
             if (lastgest == index) {
                 break;
             }
