@@ -37,6 +37,7 @@ public class Code01 {
         swap(arr, left + (int) (Math.random() * (right - left + 1)), right);
         Wrap wrap = new Wrap(left, right);
         stack.push(wrap);
+
         while (!stack.isEmpty()) {
             Wrap currentWrap = stack.pop();
             int L = currentWrap.left - 1;
