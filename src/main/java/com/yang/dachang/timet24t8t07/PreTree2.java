@@ -1,15 +1,14 @@
 package com.yang.dachang.timet24t8t07;
 
-/**
- * 前缀树
- */
-public class PreTree {
+import java.util.HashMap;
+
+public class PreTree2 {
 
     /**
      * Node
      */
     private static class Node {
-        public Node[] nexts = new Node[26];
+        public HashMap<Integer, Node> nexts = new HashMap<>();
         public int pass = 0;
         public int end = 0;
 
@@ -19,35 +18,36 @@ public class PreTree {
 
     private Node root = new Node();
 
-    public PreTree() {
-        root = new Node();
+    public PreTree2() {
+
     }
 
     /**
-     * 插入方法
+     * 插入字符串
+     *
      * @param word
      */
     public void insert(String word) {
         if (word == null) {
             return;
         }
+
         char[] str = word.toCharArray();
         Node node = root;
-        node.pass++;
         int path = 0;
         for (int i = 0; i < str.length; i++) {
             path = str[i] - 'a';
-            if (node.nexts[path] == null) {
-                node.nexts[path] = new Node();
-            }
-            node = node.nexts[path];
             node.pass++;
+            if (!node.nexts.containsKey(path)) {
+                node.nexts.put(path, new Node());
+            }
+            node = node.nexts.get(path);
         }
         node.end++;
     }
 
     /**
-     * 在
+     * 搜索字符串
      *
      * @param word
      * @return
@@ -57,21 +57,21 @@ public class PreTree {
             return 0;
         }
 
-        Node node = root;
         char[] str = word.toCharArray();
+        Node node = root;
         int path = 0;
         for (int i = 0; i < str.length; i++) {
             path = str[i] - 'a';
-            if (node.nexts[path] == null) {
+            if (!node.nexts.containsKey(path)) {
                 return 0;
             }
-            node = node.nexts[path];
+            node = node.nexts.get(path);
         }
         return node.end;
     }
 
     /**
-     * 实现前缀数组搜索
+     * 搜索字符串前缀
      *
      * @param pre
      * @return
@@ -81,38 +81,32 @@ public class PreTree {
             return 0;
         }
 
-        Node node = root;
         char[] str = pre.toCharArray();
+        Node node = root;
         int path = 0;
         for (int i = 0; i < str.length; i++) {
             path = str[i] - 'a';
-            if (node.nexts[path] == null) {
+            if (!node.nexts.containsKey(path)) {
                 return 0;
             }
-            node = node.nexts[i];
+            node = node.nexts.get(path);
         }
         return node.pass;
     }
 
-    /**
-     * 删除字符串
-     *
-     * @param word
-     */
     public void delete(String word) {
         if (!(search(word) == 0)) {
-            Node node = root;
             char[] str = word.toCharArray();
+            Node node = root;
             int path = 0;
             for (int i = 0; i < str.length; i++) {
                 path = str[i] - 'a';
-                if (--node.nexts[path].pass == 0) {
-                    node.nexts[path] = null;
+                if ((node.nexts.get(path).pass = node.nexts.get(path).pass - 1) == 0) {
+                    node.nexts.remove(path);
                     return;
                 }
-                node = node.nexts[path];
+                node = node.nexts.get(path);
             }
         }
     }
-
 }
