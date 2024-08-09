@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Code02 {
 
     public static void main(String[] args) {
-        int[] arr = {1, 0, 3, 2, 9, 5, 7, 6};
+        int[] arr = {1, 0, 3, 2, 6, 5, 9, 7};
         getTarget(arr, 2);
         System.out.println(Arrays.toString(arr));
     }
@@ -16,50 +16,47 @@ public class Code02 {
             return;
         }
 
-        int arrLen = arr.length;
         int slideWindowLeft = 0;
         int slideWindowRight = k;
         int[] help = new int[k + 1];
         // 建立 0 - k的小根堆
-        for (int i = slideWindowLeft; i <= slideWindowRight; i++) {
-            help[i - slideWindowLeft] = arr[i];
-            heapInsert(help, i - slideWindowLeft, slideWindowLeft);
+        for (int i = 0; i < slideWindowRight - slideWindowLeft + 1; i++) {
+            help[i] = arr[i];
+            heapInsert(help, i);
         }
-        arr[0] = help[0];
-        slideWindowLeft = 1;
-        slideWindowRight = slideWindowLeft + (k + 1);
-        for (; slideWindowLeft < arrLen; slideWindowLeft++) {
-            help[0] = arr[slideWindowLeft];
-            heapify(help, 0, slideWindowRight - slideWindowLeft);
-            arr[slideWindowLeft - k] = help[0];
-            if (slideWindowRight < arrLen) {
-                slideWindowRight++;
+
+        int heapSize = slideWindowRight - slideWindowLeft + 1;
+        while (heapSize > 0) {
+            if (heapSize == k + 1 && slideWindowRight != arr.length - 1) {
+                slideWindowLeft++;
+                int result = set(help, arr[++slideWindowRight], heapSize);
+                arr[slideWindowLeft - 1] = result;
+            } else {
+                slideWindowLeft++;
+                heapSize = slideWindowRight - slideWindowLeft + 1;
+                int result = pop(help, heapSize);
+                arr[slideWindowLeft - 1] = result;
             }
         }
-
-        // while (slideWindowRight < arrLen) {
-        //     for (int i = slideWindowLeft; i <= slideWindowRight; i++) {
-        //         help[i - slideWindowLeft] = arr[i];
-        //         heapInsert(help, i - slideWindowLeft, slideWindowLeft);
-        //     }
-        //
-        //     slideWindowRight++;
-        //     if (slideWindowLeft != arrLen - 1) {
-        //         slideWindowLeft++;
-        //     }
-        // }
-        // while (slideWindowRight > 0) {
-        //     for (int i = slideWindowLeft; i <= slideWindowRight; i++) {
-        //         heapify(arr, i, slideWindowRight - slideWindowLeft + 1);
-        //     }
-        //     slideWindowRight--;
-        //     if (slideWindowLeft != 0) {
-        //         slideWindowLeft--;
-        //     }
-        // }
     }
 
-    public static void heapInsert(int[] arr, int index, int window) {
+    public static int set(int[] arr, int data, int heapSize) {
+        int result = arr[0];
+        arr[0] = data;
+        heapify(arr, 0, heapSize);
+        return result;
+    }
+
+    public static int pop(int[] arr, int heapSize) {
+        if (heapSize == 0) {
+            return arr[0];
+        }
+        swap(arr, 0, heapSize);
+        heapify(arr, 0, heapSize);
+        return arr[heapSize];
+    }
+
+    public static void heapInsert(int[] arr, int index) {
         while (arr[(index - 1) / 2] > arr[index]) {
             swap(arr, index, (index - 1) / 2);
             index = (index - 1) / 2;
