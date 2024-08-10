@@ -27,7 +27,7 @@ public class Code3 {
         List<Customer> cands = new ArrayList<>();
         Map<Integer, Customer> userMap = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
-            if (!buys[i]) {
+            if (!buys[i] && !userMap.containsKey(i)) {
                 ans.add(daddy);
                 continue;
             }
@@ -56,8 +56,9 @@ public class Code3 {
             clearBuyIsZero(daddy);
             daddy.sort(new ComparatorWithDaddy());
             cands.sort(new ComparatorWithCands());
-
+            ans.add(daddy);
         }
+        return ans;
     }
 
     public static void move(List<Customer> daddy, List<Customer> cands, int i, int k) {
