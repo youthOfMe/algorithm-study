@@ -1,7 +1,6 @@
 package com.yang.dachang.timet24t08t08;
 
 import java.util.*;
-import java.util.regex.Pattern;
 
 /**
  * 情景题暴力版
@@ -99,7 +98,7 @@ public class Code3 {
     }
 
 
-    public static void clearBuyIsZero(List<Customer> list, Map<Integer) {
+    public static void clearBuyIsZero(List<Customer> list) {
         Iterator<Customer> iterator = list.iterator();
         while (iterator.hasNext()) {
             Customer customer = iterator.next();
