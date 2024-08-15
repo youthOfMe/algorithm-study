@@ -15,7 +15,8 @@ public class Code01 {
         treeNode1.right = treeNode3;
 
         // System.out.println(getHeadFor(treeNode1));
-        System.out.println(getTailFor(treeNode1));
+        // System.out.println(getTailFor(treeNode1));
+        System.out.println(getMiddleFor(treeNode1));
     }
 
     public static String getHeadFor(TreeNode treeNode) {
@@ -55,6 +56,28 @@ public class Code01 {
             res.append(curTreeNode.value).append(" ");
         }
 
+        return res.toString();
+    }
+
+    public static String getMiddleFor(TreeNode treeNode) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curTreeNode = treeNode;
+        StringBuilder res = new StringBuilder();
+        while (curTreeNode != null) {
+            stack.push(curTreeNode);
+            curTreeNode = curTreeNode.left;
+        }
+        while (!stack.isEmpty()) {
+            curTreeNode = stack.pop();
+            res.append(curTreeNode.value).append(" ");
+            curTreeNode = curTreeNode.right;
+            if (curTreeNode != null) {
+                while (curTreeNode != null) {
+                    stack.push(curTreeNode);
+                    curTreeNode = curTreeNode.left;
+                }
+            }
+        }
         return res.toString();
     }
 }
