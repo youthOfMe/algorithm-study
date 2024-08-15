@@ -14,7 +14,8 @@ public class Code01 {
         treeNode3.value = 3;
         treeNode1.right = treeNode3;
 
-        System.out.println(getHeadFor(treeNode1));
+        // System.out.println(getHeadFor(treeNode1));
+        System.out.println(getTailFor(treeNode1));
     }
 
     public static String getHeadFor(TreeNode treeNode) {
@@ -36,18 +37,24 @@ public class Code01 {
 
     public static String getTailFor(TreeNode treeNode) {
         Stack<TreeNode> stack = new Stack<>();
-        String res = "";
+        Stack<TreeNode> resStack = new Stack<>();
+        StringBuilder res = new StringBuilder();
         stack.add(treeNode);
         while (!stack.isEmpty()) {
-            TreeNode cur = stack.pop();
-            res += cur.value + " ";
-            if (cur.right != null) {
-                stack.push(cur.right);
+            TreeNode curTreeNode = stack.pop();
+            resStack.push(curTreeNode);
+            if (curTreeNode.left != null) {
+                stack.push(curTreeNode.left);
             }
-            if (cur.left != null) {
-                stack.push(cur.left);
+            if (curTreeNode.right != null) {
+                stack.push(curTreeNode.right);
             }
         }
-        return res;
+        while (!resStack.isEmpty()) {
+            TreeNode curTreeNode = resStack.pop();
+            res.append(curTreeNode.value).append(" ");
+        }
+
+        return res.toString();
     }
 }

@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Code02 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // 创建第一个链表，长度为3
         Node02 list1Head = new Node02(1); // 头节点
         Node02 list1Node2 = new Node02(2); // 第二个节点
