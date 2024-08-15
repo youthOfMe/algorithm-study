@@ -1,5 +1,6 @@
 package com.yang.dachang.timet24t08t14;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 /**
@@ -23,23 +24,62 @@ public class Code02 {
         treeNode5.value = 5;
         treeNode2.right = treeNode5;
 
-        Stack<String> preSerializeTarget = getPreSerializeTarget(treeNode1);
+        LinkedList<String> preSerializeTarget = getPreSerializeTarget(treeNode1);
         System.out.println(preSerializeTarget);
+
+        System.out.println(getHeadFor(getPreOppositeSerializeTarget(preSerializeTarget)));
+        // getHeadFor();
     }
 
-    public static Stack<String> getPreSerializeTarget(TreeNode treeNode) {
-        Stack<String> stack = new Stack<>();
+    // 先序序列化二叉树
+    public static LinkedList<String> getPreSerializeTarget(TreeNode treeNode) {
+        LinkedList<String> stack = new LinkedList<>();
         preSerialize(treeNode, stack);
         return stack;
     }
 
-    public static void preSerialize(TreeNode treeNode, Stack<String> stack) {
+    public static void preSerialize(TreeNode treeNode, LinkedList<String> stack) {
         if (treeNode == null) {
-            stack.push("null");
+            stack.add("null");
         } else {
-            stack.push(String.valueOf(treeNode.value));
+            stack.add(String.valueOf(treeNode.value));
             preSerialize(treeNode.left, stack);
             preSerialize(treeNode.right, stack);
         }
     }
+
+    // 先序反序列化二叉树
+    public static TreeNode getPreOppositeSerializeTarget(LinkedList<String> stack) {
+        return preOppositeSerialize(stack);
+    }
+
+    public static TreeNode preOppositeSerialize(LinkedList<String> stack) {
+        String treeNodeStr = stack.poll();
+        if (treeNodeStr.equals("null")) {
+            return null;
+        }
+        TreeNode treeNode = new TreeNode();
+        treeNode.value = Integer.valueOf(treeNodeStr);
+        treeNode.left = preOppositeSerialize(stack);
+        treeNode.right = preOppositeSerialize(stack);
+        return treeNode;
+    }
+
+    public static String getHeadFor(TreeNode treeNode) {
+        Stack<TreeNode> stack = new Stack<>();
+        String res = "";
+        stack.add(treeNode);
+        while (!stack.isEmpty()) {
+            TreeNode cur = stack.pop();
+            res += cur.value + " ";
+            if (cur.right != null) {
+                stack.push(cur.right);
+            }
+            if (cur.left != null) {
+                stack.push(cur.left);
+            }
+        }
+        return res;
+    }
+
 }
