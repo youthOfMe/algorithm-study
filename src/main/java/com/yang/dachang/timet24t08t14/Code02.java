@@ -29,6 +29,8 @@ public class Code02 {
 
         System.out.println(getHeadFor(getPreOppositeSerializeTarget(preSerializeTarget)));
         // getHeadFor();
+
+        System.out.println(getLayerSerializeTarget(treeNode1));
     }
 
     // 先序序列化二叉树
@@ -80,6 +82,31 @@ public class Code02 {
             }
         }
         return res;
+    }
+
+    public static LinkedList<String> getLayerSerializeTarget(TreeNode treeNode) {
+        if (treeNode == null) {
+            return null;
+        }
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        LinkedList<String> resQueue = new LinkedList<>();
+        queue.add(treeNode);
+        while (!queue.isEmpty()) {
+            treeNode = queue.poll();
+            resQueue.add(String.valueOf(treeNode.value));
+            if (treeNode.left != null) {
+                queue.add(treeNode.left);
+            } else {
+                resQueue.add("null");
+            }
+            if (treeNode.right != null) {
+                queue.add(treeNode.right);
+            } else {
+                resQueue.add("null");
+            }
+
+        }
+        return resQueue;
     }
 
 }
