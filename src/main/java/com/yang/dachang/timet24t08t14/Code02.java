@@ -31,6 +31,8 @@ public class Code02 {
         // getHeadFor();
 
         System.out.println(getLayerSerializeTarget(treeNode1));
+
+        System.out.println(getTarget(getLayerOppositeSerializeTarget(getLayerSerializeTarget(treeNode1))));
     }
 
     // 先序序列化二叉树
@@ -84,6 +86,7 @@ public class Code02 {
         return res;
     }
 
+    // 按层遍历序列化和反序列化
     public static LinkedList<String> getLayerSerializeTarget(TreeNode treeNode) {
         if (treeNode == null) {
             return null;
@@ -91,22 +94,73 @@ public class Code02 {
         LinkedList<TreeNode> queue = new LinkedList<>();
         LinkedList<String> resQueue = new LinkedList<>();
         queue.add(treeNode);
+        resQueue.add(String.valueOf(treeNode.value));
         while (!queue.isEmpty()) {
             treeNode = queue.poll();
-            resQueue.add(String.valueOf(treeNode.value));
             if (treeNode.left != null) {
                 queue.add(treeNode.left);
+                resQueue.add(String.valueOf(treeNode.left.value));
             } else {
-                resQueue.add("null");
+                resQueue.add(null);
             }
             if (treeNode.right != null) {
                 queue.add(treeNode.right);
+                resQueue.add(String.valueOf(treeNode.right.value));
             } else {
-                resQueue.add("null");
+                resQueue.add(null);
             }
 
         }
         return resQueue;
+    }
+
+    public static TreeNode getLayerOppositeSerializeTarget(LinkedList<String> linkedList) {
+        if (linkedList.size() <= 0) {
+            return null;
+        }
+        String value = linkedList.poll();
+        TreeNode head = generateNode(value);
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(head);
+        while (!queue.isEmpty()) {
+            TreeNode curNode = queue.poll();
+            TreeNode leftNode = generateNode(linkedList.poll());
+            TreeNode rightNode = generateNode(linkedList.poll());
+            if (leftNode != null) {
+                curNode.left = leftNode;
+                queue.add(curNode.left);
+            }
+            if (rightNode != null) {
+                curNode.right = rightNode;
+                queue.add(curNode.right);
+            }
+        }
+        return head;
+    }
+
+    public static TreeNode generateNode(String value) {
+        if (value == null) {
+            return null;
+        }
+        return new TreeNode(Integer.valueOf(value));
+    }
+
+    public static String getTarget(TreeNode treeNode) {
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        StringBuilder res = new StringBuilder();
+        queue.add(treeNode);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            res.append(node.value).append(" ");
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+
+        return res.toString();
     }
 
 }
