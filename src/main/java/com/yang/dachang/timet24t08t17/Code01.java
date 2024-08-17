@@ -1,6 +1,8 @@
 package com.yang.dachang.timet24t08t17;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * 贪心解决最多安排会议问题
@@ -22,7 +24,7 @@ public class Code01 {
         list.add(program5);
         int result = getResult(list.toArray(new Program[list.size()]));
         System.out.println(result);
-
+        System.out.println(getResult(list.toArray(new Program[list.size()])));
     }
 
     public static class Program {
@@ -67,5 +69,27 @@ public class Code01 {
             }
         }
         return programs;
+    }
+
+    // 贪心解决
+    public static class CompareTimeLine implements Comparator<Program> {
+
+        @Override
+        public int compare(Program o1, Program o2) {
+            return o1.end - o2.end;
+        }
+    }
+
+    public static int getTarget(Program[] programs) {
+        Arrays.sort(programs, new CompareTimeLine());
+        int res = 1;
+        Program preProgram = programs[0];
+        for (int i = 1; i < programs.length; i++) {
+            Program curProgram = programs[i];
+            if (preProgram.end <= curProgram.start) {
+                res++;
+            }
+        }
+        return res;
     }
 }
