@@ -35,12 +35,12 @@ public class Code01 {
         public Node<T> findHead(Node<T> node) {
             Stack<Node<T>> stack = new Stack<>();
             Node<T> curNode = node;
-            while (parentMap.get(curNode) != node) {
+            while (parentMap.get(curNode) != curNode) {
                 stack.push(curNode);
                 curNode = parentMap.get(curNode);
             }
             while (!stack.isEmpty()) {
-                parentMap.put(stack.pop(), node);
+                parentMap.put(stack.pop(), curNode);
             }
             return curNode;
         }
