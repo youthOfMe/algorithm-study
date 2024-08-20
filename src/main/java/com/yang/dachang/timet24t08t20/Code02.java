@@ -9,25 +9,27 @@ public class Code02 {
 
     }
 
-    public static void getTarget(char[][] initData){
-        int isLands = 0;
+    public static int getTarget(int[][] initData){
+        int res = 0;
         for (int i = 0; i < initData.length; i++) {
             for (int j = 0; j < initData[0].length; j++) {
-                if (initData[i][j] == '1') {
-                    isLands++;
+                if (initData[i][j] == 1) {
+                   res = Math.max(res, process(initData, i, j, 1));
                 }
             }
         }
+        return res;
     }
 
-    public static void process(char[][] initData, int i, int j) {
-        if (i < 0 || i == initData.length || j < 0 || j == initData[0].length || initData[i][j] != '1') {
-            return;
+    public static int process(int[][] initData, int i, int j, int isArea) {
+        if (i < 0 || i == initData.length || j < 0 || j == initData[0].length || initData[i][j] != 1) {
+            return 0;
         }
         initData[i][j] = 0;
-        process(initData, i - 1, j);
-        process(initData, i, j - 1);
-        process(initData, i, j + 1);
-        process(initData, i + 1, j);
+        isArea += process(initData, i - 1, j, 1);
+        isArea += process(initData, i, j - 1, 1);
+        isArea += process(initData, i, j + 1, 1);
+        isArea += process(initData, i + 1, j, 1);
+        return isArea;
     }
 }
