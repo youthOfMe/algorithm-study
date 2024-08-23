@@ -10,7 +10,7 @@ public class Code03 {
     }
 
     public static int getTarget(int m, int n, int[][] positions) {
-
+        return 1;
     }
 
     public static class UNION {
