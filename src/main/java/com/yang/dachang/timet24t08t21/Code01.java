@@ -2,6 +2,9 @@ package com.yang.dachang.timet24t08t21;
 
 import java.util.*;
 
+/**
+ * hashMap实现并查集完成岛屿问题
+ */
 public class Code01 {
 
     public static void main(String[] args) {
@@ -75,7 +78,7 @@ public class Code01 {
             sets = list.size();
             for (int i = 0; i < list.size(); i++) {
                 Dot dot = list.get(i);
-                Node node = new Node(list.get(i);
+                Node node = new Node(list.get(i));
                 nodes.put(dot, node);
                 parents.put(node, node);
                 sizeMap.put(node, 1);
