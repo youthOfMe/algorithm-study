@@ -65,7 +65,7 @@ public class Code03 {
 
         public int connect(int r, int c) {
             int index = getIndex(r, c);
-            if (sizes[index] != 0) {
+            if (sizes[index] == 0) {
                 parents[index] = index;
                 sizes[index] = 1;
                 sets++;
