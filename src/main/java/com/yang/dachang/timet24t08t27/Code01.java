@@ -29,6 +29,20 @@ public class Code01 {
         return res;
     }
 
+    public static List<String> getTarget(String string) {
+        ArrayList<String> res = new ArrayList<>();
+        if (string == null || string.isEmpty()) {
+            res.add("");
+            return res;
+        }
+        ArrayList<Character> rest = new ArrayList<>();
+        for (char cha : string.toCharArray()) {
+            rest.add(cha);
+        }
+        f(rest, "", res);
+        return res;
+    }
+
     public static void f(List<Character> rest, String path, List<String> ans) {
         if (rest.isEmpty()) {
             ans.add(path);
