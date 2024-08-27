@@ -9,7 +9,7 @@ import java.util.List;
 public class Code05 {
 
     public static void main(String[] args) {
-        List<String> target = getTarget(new char[]{'a', 'b', 'c'});
+        List<String> target = getTarget(new char[]{'a', 'b', 'c', 'a', 'b', 'c'});
         for (String s : target) {
             System.out.println(s);
         }
