@@ -9,7 +9,7 @@ import java.util.List;
 public class Code02 {
 
     public static void main(String[] args) {
-        for (String abc : getTarget("abc")) {
+        for (String abc : getTarget("abca")) {
             System.out.println(abc);
         }
 
