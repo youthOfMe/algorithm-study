@@ -28,7 +28,7 @@ public class Code07 {
             } else if (arr[cur] == x) {
                 cur++;
             } else {
-                swap(arr, --big, cur++);
+                swap(arr, --big, cur);
             }
         }
     }
