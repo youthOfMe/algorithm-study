@@ -23,6 +23,7 @@ public class Code10 {
             return;
         }
 
+        swap(arr, left + (int) (Math.random() * (right - left + 1)), right);
         int[] quickSort = quickSort2(arr, left, right);
         getTarget(arr, left, quickSort[0]);
         getTarget(arr, quickSort[1], right);
