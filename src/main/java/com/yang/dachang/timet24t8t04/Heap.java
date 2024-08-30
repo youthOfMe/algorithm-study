@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class Heap {
 
-    private int[] heapWrap = new int[1000];
+    public int[] heapWrap = new int[1000];
 
     private int heapSize = 0;
 
