@@ -55,6 +55,7 @@ public class SmallHeap {
     private void heapInsert(int index) {
         while (heapWrap[(index - 1) / 2] > heapWrap[index]) {
             swap((index - 1) / 2, index);
+            index = (index - 1) / 2;
         }
     }
 
