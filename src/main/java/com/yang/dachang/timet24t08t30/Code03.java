@@ -1,6 +1,5 @@
 package com.yang.dachang.timet24t08t30;
 
-import java.time.temporal.ValueRange;
 import java.util.List;
 
 /**
@@ -33,6 +32,10 @@ public class Code03 {
         public int value;
         public TwoTree left;;
         public TwoTree right;
+
+        public TwoTree() {
+
+        }
 
         public TwoTree(int value) {
             this.value = value;
