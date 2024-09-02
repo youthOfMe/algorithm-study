@@ -1,9 +1,6 @@
 package com.yang.dachang.timet24t09.time02;
 
-import com.yang.dachang.timet24t08t31.Code01;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -75,6 +72,11 @@ public class Code03 {
         return head;
     }
 
+    /**
+     * 多叉树 -> 二叉树
+     * @param treeNode
+     * @return
+     */
     public static MoreTree twoTreeToMoreTree(TreeNode treeNode) {
         if (treeNode == null) {
             return null;
@@ -85,7 +87,8 @@ public class Code03 {
             return moreTree;
         }
 
-        new MoreTree(treeNode.value, de(treeNode.left));
+        MoreTree res = new MoreTree(treeNode.value, de(treeNode.left));
+        return res;
     }
 
     public static List<MoreTree> de(TreeNode root) {
