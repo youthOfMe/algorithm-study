@@ -4,7 +4,7 @@ package com.yang.dachang.timet24t08t14;
 import java.util.LinkedList;
 
 /**
- * 二叉树
+ * 二叉树的层序遍历
  */
 public class Code01 {
 
