@@ -84,6 +84,8 @@ public class Code03 {
         if (treeNode.left == null && treeNode.right == null) return moreTree;
 
         moreTree.moreTreeList = de(treeNode.left);
+
+        return moreTree;
     }
 
     public static List<MoreTree> de(TreeNode treeNode) {
