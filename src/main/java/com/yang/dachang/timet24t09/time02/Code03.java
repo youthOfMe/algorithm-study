@@ -73,32 +73,27 @@ public class Code03 {
     }
 
     /**
-     * 多叉树 -> 二叉树
+     * 二叉树 -> 多叉树
      * @param treeNode
      * @return
      */
-    public static MoreTree twoTreeToMoreTree(TreeNode treeNode) {
-        if (treeNode == null) {
-            return null;
-        }
+    public static MoreTree moreTreeToTwoTree(TreeNode treeNode) {
+        if (treeNode == null) return null;
 
         MoreTree moreTree = new MoreTree(treeNode.value);
-        if (treeNode.left == null || treeNode.right == null) {
-            return moreTree;
-        }
+        if (treeNode.left == null && treeNode.right == null) return moreTree;
 
-        MoreTree res = new MoreTree(treeNode.value, de(treeNode.left));
-        return res;
+        moreTree.moreTreeList = de(treeNode.left);
     }
 
-    public static List<MoreTree> de(TreeNode root) {
-        List<MoreTree> children = new ArrayList<>();
-        while (root != null) {
-            MoreTree tNode = new MoreTree(root.value, de(root.left));
-            children.add(tNode);
-            root = root.right;
+    public static List<MoreTree> de(TreeNode treeNode) {
+        List<MoreTree> moreTrees = new ArrayList<>();
+        while (treeNode != null) {
+            MoreTree moreTree = new MoreTree(treeNode.value, de(treeNode.left));
+            moreTrees.add(moreTree);
+            treeNode = treeNode.right;
         }
-        return children;
+        return moreTrees;
     }
 
 }
