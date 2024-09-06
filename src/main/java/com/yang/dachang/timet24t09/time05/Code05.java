@@ -37,8 +37,6 @@ public class Code05 {
                 process(res, path + datum, data);
             }
         }
-
-
     }
 
 }
