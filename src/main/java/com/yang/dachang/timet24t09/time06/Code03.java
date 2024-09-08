@@ -8,9 +8,27 @@ import java.util.Arrays;
 public class Code03 {
 
     public static void main(String[] args) {
-        System.out.println(getTarget2(4, 2, 4, 4));
+        System.out.println(getTarget3(5, 2, 4, 6));
     }
 
+    // 动态递归第二次优化
+    public static int getTarget3(int N, int start, int aim, int k) {
+        if (N < 2 || start < 0 || start > N || aim < 0 || aim > N || k <= 0) {
+            return 0;
+        }
+        int[][] dp = new int[N + 1][k + 1];
+        dp[aim][0] = 1;
+        for (int rest = 1; rest <= k; rest++) {
+            dp[1][rest] = dp[2][rest - 1];
+            for (int cur = 2; cur < N; cur++) {
+                dp[cur][rest] = dp[cur - 1][rest - 1] + dp[cur + 1][rest - 1];
+            }
+            dp[N][rest] = dp[N - 1][rest - 1];
+        }
+        return dp[start][k];
+    }
+
+    // 动态递归第一次优化
     public static int getTarget2(int N, int start, int aim, int k) {
         int[][] dp = new int[N + 1][k + 1];
         for (int[] ints : dp) {
