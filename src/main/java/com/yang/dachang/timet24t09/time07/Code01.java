@@ -6,7 +6,7 @@ package com.yang.dachang.timet24t09.time07;
 public class Code01 {
 
     public static void main(String[] args) {
-        System.out.println(getTarget(3));
+        System.out.println(getTarget(6));
     }
 
     public static int getTarget(int N) {
