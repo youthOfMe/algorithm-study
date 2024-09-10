@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class Code01 {
 
     public static void main(String[] args) {
-        System.out.println(getTarget2(5, 2, 4, 6));
+        System.out.println(getTarget3(5, 2, 4, 6));
     }
 
     public static int getTarget1(int N, int start, int aim, int k) {
@@ -51,6 +51,19 @@ public class Code01 {
             res = process1(N, cur + 1, aim, rest - 1) + process1(N, cur - 1, aim, rest - 1);
         }
         return res;
+    }
+
+    public static int getTarget3(int N, int start, int aim, int rest) {
+        int[][] ints = new int[N + 1][rest + 1];
+        ints[aim][0] = 1;
+        for (int r = 1; r < rest; r++) {
+            ints[1][r] = ints[2][r - 1];
+            for (int cur = 2; cur < N; cur++) {
+                ints[cur][r] = ints[cur - 1][r - 1] + ints[cur + 1][r - 1];
+            }
+            ints[N][r] = ints[N - 1][r - 1];
+        }
+        return ints[start][rest];
     }
 
 }
