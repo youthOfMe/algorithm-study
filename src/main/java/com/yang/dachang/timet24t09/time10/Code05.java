@@ -11,7 +11,7 @@ public class Code05 {
 
     public static int getTarget(int[] w, int[] v, int bag) {
         if (w == null || w.length == 0 || v == null || v.length == 0 || bag < 0) return 0;
-
+        return process(w, v, bag, 0);
     }
 
     public static int process(int[] w, int[] v, int bag, int index) {
