@@ -27,8 +27,5 @@ public class Code02 {
         return ways;
     }
 
-    public static int process(char[] tarArr, int index) {
-
-    }
 
 }
