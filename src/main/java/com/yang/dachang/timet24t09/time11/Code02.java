@@ -9,9 +9,9 @@ public class Code02 {
 
     }
 
-    public static int getTarget(String target, String[] strings) {
-
-    }
+    // public static int getTarget(String target, String[] strings) {
+    //
+    // }
 
     public static int process(String target, String[] strings) {
         if (target.isEmpty()) return 0;
