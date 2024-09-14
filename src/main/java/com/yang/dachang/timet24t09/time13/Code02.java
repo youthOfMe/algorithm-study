@@ -20,6 +20,7 @@ public class Code02 {
                 stickArr[i][c - 'a']++;
             }
         }
+        return process(target, stickArr);
     }
 
     public static int process(String target, int[][] stickArr) {
