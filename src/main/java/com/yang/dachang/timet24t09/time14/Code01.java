@@ -53,7 +53,7 @@ public class Code01 {
                 min = process2(res.toString(), charSet);
             }
         }
-        int ans = min + (min == Integer.MAX_VALUE ? 0 : 1)
+        int ans = min + (min == Integer.MAX_VALUE ? 0 : 1);
         cache.put(target, ans);
         return ans;
     }
