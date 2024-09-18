@@ -1,7 +1,5 @@
 package com.yang.dachang.timet24t09.time16;
 
-import com.sun.deploy.util.SyncAccess;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -72,6 +70,29 @@ public class Code03 {
                 }
             }
         }
+        return dp[0][aim];
+    }
+
+    public static int getTarget3(int[] arr, int aim) {
+        Info info = getInfo(arr);
+        return dp2(info.coins, info.zhangs, aim);
+    }
+
+    public static int dp2(int[] coins, int[] zhangs, int aim) {
+        final int N = coins.length;
+        int[][] dp = new int[N + 1][aim + 1];
+        for (int index = N - 1; index >= 0; index--) {
+            for (int rest = 0; rest <= aim; rest++) {
+                dp[index][rest] = dp[index + 1][rest];
+                if (rest - coins[index] >= 0) {
+                    dp[index][rest] += dp[index][rest - coins[index]];
+                }
+                if (rest - coins[index] * (zhangs[index] + 1) >= 0) {
+                    dp[index][rest] -= dp[index + 1][rest - coins[index] * (zhangs[index] + 1)];
+                }
+            }
+        }
+        return dp[0][aim];
     }
 
 }
