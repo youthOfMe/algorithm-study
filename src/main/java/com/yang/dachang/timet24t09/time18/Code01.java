@@ -9,6 +9,15 @@ public class Code01 {
 
     }
 
+    // 高级动态规划
+    // public static int getTarget3(int col, int row, int rest, int N, int M) {
+    //
+    // }
+    //
+    // public static int process3(int col, int row, int rest, int N, int M) {
+    //
+    // }
+
     // 动态规划
     public static int getTarget2(int col, int row, int rest, int N, int M) {
         return process2(col, row, rest, N, M);
