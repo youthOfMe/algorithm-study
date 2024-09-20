@@ -19,12 +19,12 @@ public class Code04 {
         }
         int ans = Integer.MAX_VALUE;
         for (int zhang = 0; rest - arr[index] * zhang >= 0; zhang++) {
-            int next = process(arr, rest - arr[index] * zhang, index++);
+            int next = process(arr, rest - arr[index] * zhang, index + 1);
             if (next != Integer.MAX_VALUE) {
                 ans = Math.min(ans, next + zhang);
             }
         }
-        return ans
+        return ans;
     }
 
 }
