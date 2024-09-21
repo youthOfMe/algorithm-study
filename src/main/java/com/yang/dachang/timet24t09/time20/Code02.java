@@ -14,7 +14,7 @@ public class Code02 {
     }
 
     public static int process(int n) {
-        int[][] dp = new int[n][n];
+        int[][] dp = new int[n + 1][n + 1];
         for (int row = 1, col = 1; row <= n && col <= n; row++, col++) {
             dp[row][0] = 1;
             dp[row][col] = 1;
