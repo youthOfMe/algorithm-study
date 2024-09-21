@@ -9,7 +9,9 @@ public class Code06 {
 
     }
 
-    public static int getTarget3(int[] arr, int aim) {}
+    public static int getTarget3(int[] arr, int aim) {
+        return process(arr, aim);
+    }
 
     public static int process(int[] arr, int aim) {
         final int N = arr.length;
