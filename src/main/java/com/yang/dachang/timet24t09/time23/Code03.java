@@ -50,7 +50,7 @@ public class Code03 {
         if ((arr.length & 1) == 0) {
             return dp[0][res][picks];
         } else {
-            return Math.max(dp[0][res][picks], dp[0][res][picks + 1]);
+            return Math.max(dp[0][res][picks], dp[0][res][picks - 1]);
         }
     }
 
