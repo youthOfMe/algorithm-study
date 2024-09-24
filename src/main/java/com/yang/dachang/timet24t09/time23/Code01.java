@@ -28,6 +28,7 @@ public class Code01 {
                 dp[index][rest] = Math.max(p1, p2);
             }
         }
+        return dp[0][target];
     }
 
     // 暴力递归
