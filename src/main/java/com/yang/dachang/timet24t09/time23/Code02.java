@@ -25,7 +25,7 @@ public class Code02 {
             int p1 = process(arr, index + 1, picks, rest);
             int p2 = -1;
             int next = -1;
-            if (arr[index] <= rest) {
+            if (picks > 0 && arr[index] <= rest) {
                 next = process(arr, index + 1, picks - 1, rest - arr[index]);
             }
             if (next != -1) {
