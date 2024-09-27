@@ -16,14 +16,13 @@ public class Code01 {
         final int N = arr.length;
         int res = 0;
         int left = 0;
-        int right = left + 1;
         for (; left < N; left++) {
-            for (; right < N; right++) {
+            for (int right = left; right < N; right++) {
                 int min = arr[left];
                 int max = arr[left];
                 for (int index = left + 1; index <= right; index++) {
                     min = Math.min(min, arr[index]);
-                    max = Math.max(min, arr[index]);
+                    max = Math.max(max, arr[index]);
                 }
                 res += (max - min <= num) ? 1 : 0;
             }
