@@ -10,7 +10,7 @@ public class Code01 {
     }
 
     public static int getTarget(int[] arr, int num) {
-        if (arr == null || arr.length == 0) {
+        if (arr == null || arr.length == 0 || num < 0) {
             return 0;
         }
         final int N = arr.length;
