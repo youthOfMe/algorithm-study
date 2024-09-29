@@ -6,7 +6,8 @@ package com.yang.dachang.timet24t09.time27;
 public class Code03 {
 
     public static void main(String[] args) {
-
+        int[] arr = new int[]{3, 1, 3, 5, 1, 1, 1, 5, 3, 2};
+        System.out.println(getTarget(arr, 15));
     }
 
     public static int getTarget(int[] arr, int aim) {
@@ -17,19 +18,23 @@ public class Code03 {
     }
 
     public static int process(int[] arr, int index, int rest) {
-        if (arr.length == index) {
-            return rest == 0 ? 1 : 0;
+        if (index == arr.length) {
+            return rest == 0 ? 0 : -1;
         }
-        int p1 = process(arr, index + 1, rest);
-        int p2 = -1;
-        int next = -1;
-        if (rest > arr[index]) {
-            next = process(arr, index + 1, rest - arr[index]);
-        }
+
+        int ans = Integer.MAX_VALUE;
+        int next = process(arr, index + 1, rest);
         if (next != -1) {
-            p2 = next;
+            ans = Math.min(ans, next);
         }
-        return Math.min(p1, p2);
+        if (rest >= arr[index]) {
+            next = process(arr, index + 1, rest - arr[index]);
+            if (next != -1) {
+                ans = Math.min(ans, next + 1);
+            }
+        }
+
+        return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 
 
