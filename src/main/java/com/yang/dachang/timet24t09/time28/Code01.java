@@ -9,7 +9,8 @@ public class Code01 {
 
     public static void main(String[] args) {
         int[] arr = new int[]{3, 1, 3, 5, 1, 1, 1, 5, 3, 2};
-        System.out.println(getTarget(arr, 15));
+        System.out.println(getTarget2(arr, 15));
+        System.out.println(getTarget(arr, 15) == getTarget2(arr, 15));
     }
 
     public static class Info {
@@ -58,6 +59,35 @@ public class Code01 {
             }
         }
         return ans == Integer.MAX_VALUE ? -1 : ans;
+    }
+
+    public static int getTarget2(int[] arr, int aim) {
+        Info info = getInfos(arr);
+        return dp(info.coins, info.zhangs, aim);
+    }
+
+    public static int dp(int[] coins, int[] zhangs, int aim) {
+        final int N = coins.length;
+        int[][] dp = new int[N + 1][aim + 1];
+        for (int index = 0; index <= N; index++) {
+            for (int rest = 0; rest <= aim; rest++) {
+                dp[index][rest] = -1;
+            }
+        }
+        dp[N][0] = 0;
+        for (int index = N - 1; index >= 0; index--) {
+            for (int rest = 0; rest <= aim; rest++) {
+                int ans = Integer.MAX_VALUE;
+                for (int zhang = 0; zhang <= zhangs[index] && zhang * coins[index] <= rest; zhang++) {
+                    int next = dp[index + 1][rest - coins[index] * zhang];
+                    if (next != -1) {
+                        ans = Math.min(ans, zhang + next);
+                    }
+                }
+                dp[index][rest] = ans == Integer.MAX_VALUE ? -1 : ans;
+            }
+        }
+        return dp[0][aim];
     }
 
 }
