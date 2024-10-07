@@ -9,14 +9,14 @@ import java.util.Stack;
 public class Code01 {
 
     public static void main(String[] args) {
-        int[][] arr = {
-                {1, 0, 1, 0, 0},
-                {1, 0, 1, 1, 1},
-                {1, 1, 1, 1, 1},
-                {1, 0, 0, 1, 0}
-        };
-        int target = getTarget(arr);
-        System.out.println(target);
+        // int[][] arr = {
+        //         {1, 0, 1, 0, 0},
+        //         {1, 0, 1, 1, 1},
+        //         {1, 1, 1, 1, 1},
+        //         {1, 0, 0, 1, 0}
+        // };
+        // int target = getTarget(arr);
+        // System.out.println(target);
 
         System.out.println(Arrays.deepToString(getIntArr(new String[]{"01101","11010","01110","11110","11111","00000"})));
         System.out.println(getTarget(getIntArr(new String[]{"01101","11010","01110","11110","11111","00000"})));
