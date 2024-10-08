@@ -84,12 +84,12 @@ public class Code01 {
         int[] rowArr = new int[M];
         for (int row = 0; row < N; row++) {
 
+            int index = 0;
+            stack[++point] = index++;
+
             for (int col = 0; col < M; col++) {
                 rowArr[col] = (arr[row][col] - '0') + (row > 0 && (arr[row][col] - '0' != 0)  ? rowArr[col] : 0);
             }
-
-            int index = 0;
-            stack[++point] = index++;
 
             while (index < M) {
                 int cur = stack[point];
