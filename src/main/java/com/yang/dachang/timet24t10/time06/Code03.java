@@ -6,7 +6,9 @@ package com.yang.dachang.timet24t10.time06;
 public class Code03 {
 
     public static void main(String[] args) {
-
+        String str1 = "aaa123";
+        String str2 = "123";
+        System.out.println(getTarget(str1, str2));
     }
 
     public static int getTarget(String str1, String str2) {
