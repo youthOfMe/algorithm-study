@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: KMP算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time08/Code01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time08/Code02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time08/Code03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,9 +76,9 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time08.Code01">
-    <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time06.Code01" />
+  <component name="RunManager" selected="Application.Code03">
+    <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time06.Code02" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -89,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time06.Code02" />
+    <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time08.Code03" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time06.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,16 +146,16 @@
       <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time06.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time07.Code01" />
-      <item itemvalue="Application.Code01" />
+      <item itemvalue="Application.Code03" />
       <item itemvalue="Application.Code02" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time07.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time06.Code03" />
         <item itemvalue="Application.Code02" />
-        <item itemvalue="Application.Code01" />
       </list>
     </recent_temporary>
   </component>
@@ -258,15 +259,7 @@
       <workItem from="1728553723234" duration="626000" />
       <workItem from="1728614820555" duration="2116000" />
       <workItem from="1728638826147" duration="599000" />
-      <workItem from="1728690424167" duration="2616000" />
-    </task>
-    <task id="LOCAL-00160" summary="feat: 怪兽会死的概率 -&gt; 暴力帝国">
-      <option name="closed" value="true" />
-      <created>1726726905079</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1726726905079</updated>
+      <workItem from="1728690424167" duration="6193000" />
     </task>
     <task id="LOCAL-00161" summary="feat: 怪兽会死的概率 - 暴力递归">
       <option name="closed" value="true" />
@@ -652,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728690456968</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="feat: KMP算法">
+      <option name="closed" value="true" />
+      <created>1728699572945</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1728699572945</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
