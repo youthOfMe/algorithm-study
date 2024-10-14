@@ -4,6 +4,8 @@ package com.yang.dachang.timet24t10.time10;
 import com.yang.dachang.timet24t08t08.IndexHeap;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Stack;
 
 /**
@@ -28,8 +30,18 @@ public class Code04 {
         b.setRight(e);
         TreeNode h = new TreeNode();
         h.setValue("0");
-        e.setRight(h);
-        System.out.println(getTarget(a, b));
+        e.setLeft(h);
+
+        TreeNode treeNode = new TreeNode();
+        treeNode.setValue("4");
+        TreeNode treeNode2 = new TreeNode();
+        treeNode2.setValue("1");
+        TreeNode treeNode3 = new TreeNode();
+        treeNode3.setValue("2");
+        treeNode.setLeft(treeNode2);
+        treeNode.setRight(treeNode3);
+
+        System.out.println(getTarget(a, treeNode));
 
         // System.out.println(getTarget(a, c));
     }
@@ -38,58 +50,22 @@ public class Code04 {
         if (treeNode == null || treeNode2 == null) {
             return false;
         }
-        Stack<TreeNode> stack = new Stack<>();
-        StringBuilder stringBuilder = new StringBuilder();
-        stack.push(treeNode);
-        stringBuilder.append(treeNode.getValue());
-        while (!stack.isEmpty()) {
-            TreeNode cur = stack.pop();
 
-            if (cur.getLeft() != null) {
-                stack.push(cur.getLeft());
-            }
-            if (cur.getRight() != null) {
-                stack.push(cur.getRight());
-            }
 
-            if (cur.getLeft() == null) {
-                stringBuilder.append("#");
-            }
-            if (cur.getRight() == null) {
-                stringBuilder.append("#");
-            }
-        }
-        StringBuilder stringBuilder2 = new StringBuilder();
-        stack.push(treeNode2);
-        while (!stack.isEmpty()) {
-            TreeNode cur = stack.pop();
-            stringBuilder2.append(cur.getValue());
-            if (cur.getRight() != null) {
-                stack.push(cur.getRight());
-            }
-            if (cur.getLeft() != null) {
-                stack.push(cur.getLeft());
-            }
-            if (cur.getLeft() == null) {
-                stringBuilder2.append("#");
-            }
-            if (cur.getRight() == null) {
-                stringBuilder2.append("#");
-            }
-        }
-        String treeNodeStr1 = stringBuilder.toString();
-        String treeNodeStr2 = stringBuilder2.toString();
-        System.out.println(treeNodeStr1);
-        System.out.println(treeNodeStr2);
-        final int len1 = treeNodeStr1.length();
-        final int len2 = treeNodeStr2.length();
-        char[] chars1 = treeNodeStr1.toCharArray();
-        char[] chars2 = treeNodeStr2.toCharArray();
-        int[] next = getTarget(chars2);
+        LinkedList<String> treeNodeStr1 = getPreSerializeTarget(treeNode);
+
+        LinkedList<String> treeNodeStr2 = getPreSerializeTarget(treeNode2);
+
+        final int len1 = treeNodeStr1.size();
+        final int len2 = treeNodeStr2.size();
+
+        // char[] chars1 = treeNodeStr1.toCharArray();
+        // char[] chars2 = treeNodeStr2.toCharArray();
+        int[] next = getTarget(treeNodeStr1);
         int x = 0;
         int y = 0;
         while (x < len1 && y < len2) {
-            if (chars1[x] == chars2[y]) {
+            if (Objects.equals(treeNodeStr1.get(x), treeNodeStr2.get(y))) {
                 x++;
                 y++;
             } else if (next[y] != -1) {
@@ -102,24 +78,41 @@ public class Code04 {
         return y == len2;
     }
 
-    public static int[] getTarget(char[] chars) {
-        final int N = chars.length;
+    public static int[] getTarget(LinkedList<String> strList) {
+        final int N = strList.size();
         final int[] next = new int[N];
         int index = 2;
         int cur = 0;
         next[0] = -1;
         next[1] = 0;
         while (index < N) {
-            if (chars[index - 1] == chars[cur]) {
+            if (Objects.equals(strList.get(index - 1), strList.get(cur))) {
                 next[index++] = ++cur;
             } else if (next[cur] != -1) {
                 cur = next[cur];
             } else {
-                next[index++] = -1;
+                next[index++] = 0;
             }
         }
         return next;
     }
+
+    public static LinkedList<String> getPreSerializeTarget(TreeNode treeNode) {
+        LinkedList<String> linkedList = new LinkedList<>();
+        preSerialize(treeNode, linkedList);
+        return linkedList;
+    }
+
+    public static void preSerialize(TreeNode treeNode, LinkedList<String> linkedList) {
+        if (treeNode == null) {
+            linkedList.add("#");
+        } else {
+            linkedList.add(String.valueOf(treeNode.getValue()));
+            preSerialize(treeNode.left, linkedList);
+            preSerialize(treeNode.right, linkedList);
+        }
+    }
+
 
     private static class TreeNode {
         private String value;
