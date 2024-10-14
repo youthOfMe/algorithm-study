@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 复习KMP算法和manacher算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code03.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: KMP算法第一题 =&gt; 是否互为旋转串">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code03.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,20 +76,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code03">
-    <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time06.Code02" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Code04">
     <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time08.Code03" />
       <module name="algorithm" />
@@ -103,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time06.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time06.Code03" />
+    <configuration name="Code04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time10.Code04" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time06.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,20 +129,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.yang.dachang.timet24t10.time10.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time10.Code03" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.Code04" />
+      <item itemvalue="Application.com.yang.dachang.timet24t10.time10.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time06.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time07.Code01" />
       <item itemvalue="Application.Code03" />
-      <item itemvalue="Application.Code02" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code04" />
+        <item itemvalue="Application.com.yang.dachang.timet24t10.time10.Code03" />
         <item itemvalue="Application.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time07.Code01" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time06.Code03" />
-        <item itemvalue="Application.Code02" />
       </list>
     </recent_temporary>
   </component>
@@ -260,14 +260,6 @@
       <workItem from="1728614820555" duration="2116000" />
       <workItem from="1728638826147" duration="599000" />
       <workItem from="1728690424167" duration="6193000" />
-    </task>
-    <task id="LOCAL-00162" summary="feat: 怪兽会死的概率 - 初版动态规划">
-      <option name="closed" value="true" />
-      <created>1726806526998</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1726806526998</updated>
     </task>
     <task id="LOCAL-00163" summary="feat: 怪兽会死的概率 - 高级动态规划">
       <option name="closed" value="true" />
@@ -653,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728862656943</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="feat: KMP算法第一题 =&gt; 是否互为旋转串">
+      <option name="closed" value="true" />
+      <created>1728867677921</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1728867677921</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +671,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: N皇后问题" />
     <MESSAGE value="feat: 滑动窗口第一题 - 暴力递归" />
     <MESSAGE value="feat: 滑动窗口第一题 - 双端队列优化" />
     <MESSAGE value="feat: 滑动窗口第二题 -&gt; 暴力 O(n3)" />
@@ -696,7 +695,8 @@
     <MESSAGE value="feat: KMP算法" />
     <MESSAGE value="feat: manacher算法" />
     <MESSAGE value="feat: 复习KMP算法和manacher算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 复习KMP算法和manacher算法" />
+    <MESSAGE value="feat: KMP算法第一题 =&gt; 是否互为旋转串" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: KMP算法第一题 =&gt; 是否互为旋转串" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,6 +5,10 @@ package com.yang.dachang.timet24t10.time10;
  */
 public class Code03 {
 
+    public static void main(String[] args) {
+        System.out.println(getTarget("123456", "456123"));
+    }
+
     public static boolean getTarget(String str1, String str2) {
         if (str1 == null || str1.isEmpty() || str2 == null || str2.isEmpty()) {
             return false;
