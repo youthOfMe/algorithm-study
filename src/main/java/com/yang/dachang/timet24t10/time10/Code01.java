@@ -35,11 +35,11 @@ public class Code01 {
         final int N = chars.length;
         int[] next = new int[N];
         next[0] = -1;
-        next[1] = 1;
+        next[1] = 0;
         int up = 0;
         int cur = 2;
         while (cur < N) {
-            if (chars[cur] == chars[up]) {
+            if (chars[cur - 1] == chars[up]) {
                 next[cur++] = ++up;
             } else if (next[up] != -1) {
                 up = next[up];

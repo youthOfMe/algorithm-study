@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: KMP算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time08/Code02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time08/Code03.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 复习KMP算法和manacher算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,14 +260,6 @@
       <workItem from="1728614820555" duration="2116000" />
       <workItem from="1728638826147" duration="599000" />
       <workItem from="1728690424167" duration="6193000" />
-    </task>
-    <task id="LOCAL-00161" summary="feat: 怪兽会死的概率 - 暴力递归">
-      <option name="closed" value="true" />
-      <created>1726805908491</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1726805908491</updated>
     </task>
     <task id="LOCAL-00162" summary="feat: 怪兽会死的概率 - 初版动态规划">
       <option name="closed" value="true" />
@@ -653,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728699572945</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="feat: 复习KMP算法和manacher算法">
+      <option name="closed" value="true" />
+      <created>1728862656943</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1728862656943</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,8 +671,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 拆分数组 =&gt; 两个数组长度相似 - 动态递归" />
-    <MESSAGE value="feat: 拆分数组 =&gt; 两个数组长度相似 - 动态递归 &amp; 暴力递归" />
     <MESSAGE value="feat: N皇后问题" />
     <MESSAGE value="feat: 滑动窗口第一题 - 暴力递归" />
     <MESSAGE value="feat: 滑动窗口第一题 - 双端队列优化" />
@@ -696,7 +694,9 @@
     <MESSAGE value="feat: 暴力求解第字串存在的最先位置" />
     <MESSAGE value="feat: 乞丐版KMP算法 -&gt; 求next数组慢" />
     <MESSAGE value="feat: KMP算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: KMP算法" />
+    <MESSAGE value="feat: manacher算法" />
+    <MESSAGE value="feat: 复习KMP算法和manacher算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 复习KMP算法和manacher算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

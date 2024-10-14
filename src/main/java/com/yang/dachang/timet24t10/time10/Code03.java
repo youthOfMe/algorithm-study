@@ -1,30 +1,20 @@
-package com.yang.dachang.timet24t10.time08;
-
-import java.util.Queue;
+package com.yang.dachang.timet24t10.time10;
 
 /**
- * KMP算法
+ * KMP算法第一题 => 是否互为旋转串
  */
-public class Code01 {
+public class Code03 {
 
-    public static void main(String[] args) {
-        String str1 = "aaa123";
-        String str2 = "123";
-        System.out.println(getTarget(str1, str2));
-    }
-
-    public static int getTarget(String str1, String str2) {
+    public static boolean getTarget(String str1, String str2) {
         if (str1 == null || str1.isEmpty() || str2 == null || str2.isEmpty()) {
-            return -1;
+            return false;
         }
-        final int len1 = str1.length();
+        int len1 = str1.length();
         final int len2 = str2.length();
-        if (len2 > len1) return -1;
-        char[] chars1 = str1.toCharArray();
+        if (len1 != len2) return false;
+        char[] chars1 = (str1 + str1).toCharArray();
+        len1 = chars1.length;
         char[] chars2 = str2.toCharArray();
-        if (chars1.length == 1) {
-            return chars1[0] == chars2[0] ? 0 : -1;
-        }
         int[] next = getNextArr(chars2);
         int x = 0;
         int y = 0;
@@ -38,16 +28,16 @@ public class Code01 {
                 x++;
             }
         }
-        return y == len2 ? (x - y) : -1;
+        return y == len2;
     }
-
+    
     public static int[] getNextArr(char[] chars) {
         final int N = chars.length;
-        int[] next = new int[N];
-        next[0] = -1;
-        next[1] = 0;
+        final int[] next = new int[N];
         int index = 2;
         int cur = 0;
+        next[0] = -1;
+        next[1] = 0;
         while (index < N) {
             if (chars[index - 1] == chars[cur]) {
                 next[index++] = ++cur;
