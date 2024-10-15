@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: KMP算法第二题">
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: KMP算法解决另一棵树的子树">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,20 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code04">
+  <component name="RunManager" selected="Application.Code01">
+    <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time11.Code01" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time08.Code03" />
       <module name="algorithm" />
@@ -95,19 +109,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yang.dachang.timet24t10.time10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time07.Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time07.Code01" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,19 +143,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Code01" />
       <item itemvalue="Application.Code04" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time10.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time07.Code01" />
       <item itemvalue="Application.Code03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code01" />
         <item itemvalue="Application.Code04" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time10.Code03" />
         <item itemvalue="Application.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time07.Code01" />
       </list>
     </recent_temporary>
   </component>
@@ -259,15 +260,8 @@
       <workItem from="1728614820555" duration="2116000" />
       <workItem from="1728638826147" duration="599000" />
       <workItem from="1728690424167" duration="6193000" />
-      <workItem from="1728946782854" duration="2812000" />
-    </task>
-    <task id="LOCAL-00164" summary="feat: 面值数组，无限货币，目标值，最少组合数量 -&gt; 暴力递归">
-      <option name="closed" value="true" />
-      <created>1726811147644</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1726811147644</updated>
+      <workItem from="1728946782854" duration="6316000" />
+      <workItem from="1728962348245" duration="698000" />
     </task>
     <task id="LOCAL-00165" summary="feat: 面值数组，无限货币，目标值，最少组合数量 -&gt; 暴力递归">
       <option name="closed" value="true" />
@@ -653,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728872378148</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="feat: KMP算法解决另一棵树的子树">
+      <option name="closed" value="true" />
+      <created>1728949702290</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1728949702290</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +673,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 滑动窗口第一题 - 双端队列优化" />
     <MESSAGE value="feat: 滑动窗口第二题 -&gt; 暴力 O(n3)" />
     <MESSAGE value="feat: 滑动窗口第三题, 加油站问题 -&gt; 暴力解决" />
     <MESSAGE value="feat: 滑动窗口第三题, 加油站问题 -&gt; 滑动窗口优化" />
@@ -696,7 +697,8 @@
     <MESSAGE value="feat: 复习KMP算法和manacher算法" />
     <MESSAGE value="feat: KMP算法第一题 =&gt; 是否互为旋转串" />
     <MESSAGE value="feat: KMP算法第二题" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: KMP算法第二题" />
+    <MESSAGE value="feat: KMP算法解决另一棵树的子树" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: KMP算法解决另一棵树的子树" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
