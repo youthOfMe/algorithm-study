@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: KMP算法解决另一棵树的子树">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time10/Code01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code01">
+  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time11.Code03">
     <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time11.Code01" />
       <module name="algorithm" />
@@ -90,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time08.Code03" />
+    <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time11.Code02" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time08.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,19 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time08.Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time08.Code01" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="com.yang.dachang.timet24t10.time10.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time10.Code03" />
       <module name="algorithm" />
@@ -142,20 +130,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.yang.dachang.timet24t10.time11.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time11.Code03" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.Code02" />
+      <item itemvalue="Application.com.yang.dachang.timet24t10.time11.Code03" />
       <item itemvalue="Application.Code01" />
       <item itemvalue="Application.Code04" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time10.Code03" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
-      <item itemvalue="Application.Code03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.yang.dachang.timet24t10.time11.Code03" />
+        <item itemvalue="Application.Code02" />
         <item itemvalue="Application.Code01" />
         <item itemvalue="Application.Code04" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time10.Code03" />
-        <item itemvalue="Application.Code03" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time08.Code01" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +263,7 @@
       <workItem from="1728690424167" duration="6193000" />
       <workItem from="1728946782854" duration="6316000" />
       <workItem from="1728962348245" duration="698000" />
+      <workItem from="1729035187033" duration="2443000" />
     </task>
     <task id="LOCAL-00165" summary="feat: 面值数组，无限货币，目标值，最少组合数量 -&gt; 暴力递归">
       <option name="closed" value="true" />

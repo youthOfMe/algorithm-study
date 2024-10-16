@@ -44,7 +44,7 @@ public class Code01 {
             } else if (next[up] != -1) {
                 up = next[up];
             } else {
-                next[cur++] = -1;
+                next[cur++] = 0;
             }
         }
         return next;

@@ -1,29 +1,44 @@
 package com.yang.dachang.timet24t10.time11;
 
 import java.util.Arrays;
-import java.util.regex.Pattern;
 
 /**
- * 快速排序
+ * 快速排序的整理思路求第K小 -> 时间复杂度O（N）
  */
-public class Code02 {
+public class Code03 {
 
     public static void main(String[] args) {
         int[] arr = {1, 8, 9, 5, 6, 5, 8, 2, 0, 0, 3, 25, 62, 2, 5, 5};
         // int[] arr = {3, 1, 0, 4, 3, 1};
-        getTarget(arr, 0, arr.length - 1);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(getTarget(arr, 5));
     }
 
-    public static void getTarget(int[] arr, int  left, int right) {
-        if (arr == null || arr.length < 2 || left >= right) return;
+    public static int getTarget(int[] arr, int k) {
+        if (arr == null || arr.length < 2) {
+            return -1;
+        }
 
-        int[] quickArr = quickSort(arr, left, right);
-        getTarget(arr, left, quickArr[0]);
-        getTarget(arr, quickArr[1], right);
+        return getArrProcess(arr, 0, arr.length - 1, k -1);
     }
 
-    public static int[] quickSort(int[] arr, int left, int right) {
+    public static int getArrProcess(int[] arr, int left, int right, int k) {
+        if (left >= right) {
+            return -1;
+        }
+
+        int[] leftAndRight = getKProcess(arr, left, right);
+        int resLeft = leftAndRight[0];
+        int resRight = leftAndRight[1];
+        if (resLeft < k && resRight > k) {
+            return arr[resLeft + 1];
+        } else if (resLeft >= k) {
+            return getArrProcess(arr, left, resLeft, k);
+        } else {
+            return getArrProcess(arr, resRight, right, k);
+        }
+    }
+
+    public static int[] getKProcess(int[] arr, int left, int right) {
         if (left > right) {
             return new int[]{-1, -1};
         }
@@ -34,8 +49,8 @@ public class Code02 {
 
         int less = left - 1;
         int more = right;
-        int index = left;
         int target = right;
+        int index = left;
         while (index < more) {
             if (arr[index] < arr[target]) {
                 swap(arr, ++less, index++);
@@ -45,7 +60,6 @@ public class Code02 {
                 index++;
             }
         }
-
         swap(arr, more++, target);
         return new int[]{less, more};
     }
