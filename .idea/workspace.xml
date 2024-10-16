@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code04.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N） -&gt; 迭代方式实现">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time12/Code01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time12/Code02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,15 +262,8 @@
       <workItem from="1728690424167" duration="6193000" />
       <workItem from="1728946782854" duration="6316000" />
       <workItem from="1728962348245" duration="698000" />
-      <workItem from="1729035187033" duration="4955000" />
-    </task>
-    <task id="LOCAL-00166" summary="feat: 面值数组，无限货币，目标值，最少组合数量 -&gt; 斜率优化">
-      <option name="closed" value="true" />
-      <created>1726893933782</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1726893933782</updated>
+      <workItem from="1729035187033" duration="10125000" />
+      <workItem from="1729120734183" duration="599000" />
     </task>
     <task id="LOCAL-00167" summary="feat: 数字拆分问题 -&gt; 暴力尝试">
       <option name="closed" value="true" />
@@ -655,7 +649,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729037814036</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N） -&gt; 迭代方式实现">
+      <option name="closed" value="true" />
+      <created>1729040955976</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1729040955976</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 滑动窗口第三题, 加油站问题 -&gt; 暴力解决" />
     <MESSAGE value="feat: 滑动窗口第三题, 加油站问题 -&gt; 滑动窗口优化" />
     <MESSAGE value="feat: 滑动窗口第四题，货币数组问题，从左向右尝试" />
     <MESSAGE value="feat: 滑动窗口第四题，货币数组问题，从左向右，整理数组尝试" />
@@ -698,7 +699,8 @@
     <MESSAGE value="feat: KMP算法第二题" />
     <MESSAGE value="feat: KMP算法解决另一棵树的子树" />
     <MESSAGE value="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N）" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N）" />
+    <MESSAGE value="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N） -&gt; 迭代方式实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N） -&gt; 迭代方式实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
