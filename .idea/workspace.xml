@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 插入排序">
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: BFPRF算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time13/Code03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time13/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time13/Code01.java" afterDir="false" />
     </list>
@@ -75,7 +76,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time13.Code01">
+  <component name="RunManager" selected="Application.Code03">
     <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time11.Code01" />
       <module name="algorithm" />
@@ -89,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time11.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time11.Code03" />
+    <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code03" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time11.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,19 +143,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code01" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code02" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time11.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time11.Code04" />
       <item itemvalue="Application.Code01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code02" />
         <item itemvalue="Application.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time11.Code04" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time11.Code03" />
       </list>
     </recent_temporary>
   </component>
@@ -262,15 +263,7 @@
       <workItem from="1728946782854" duration="6316000" />
       <workItem from="1728962348245" duration="698000" />
       <workItem from="1729035187033" duration="10125000" />
-      <workItem from="1729120734183" duration="7416000" />
-    </task>
-    <task id="LOCAL-00169" summary="feat: 数字拆分问题 -&gt; 去for动归">
-      <option name="closed" value="true" />
-      <created>1726898232821</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1726898232821</updated>
+      <workItem from="1729120734183" duration="10045000" />
     </task>
     <task id="LOCAL-00170" summary="feat: 背包问题 -&gt; 暴力递归 &amp; 动态规划">
       <option name="closed" value="true" />
@@ -656,7 +649,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729124770389</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="feat: BFPRF算法">
+      <option name="closed" value="true" />
+      <created>1729129306794</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1729129306794</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 滑动窗口第四题，货币数组问题，从左向右尝试" />
     <MESSAGE value="feat: 滑动窗口第四题，货币数组问题，从左向右，整理数组尝试" />
     <MESSAGE value="feat: 滑动窗口第四题，货币数组问题，从左向右的动态规划" />
     <MESSAGE value="feat: 滑动窗口第四题，货币数组问题，整合数组的动态规划" />
@@ -699,7 +699,8 @@
     <MESSAGE value="feat: 快速排序的整理思路求第K小 -&gt; 时间复杂度O（N） -&gt; 迭代方式实现" />
     <MESSAGE value="feat: KMP算法" />
     <MESSAGE value="feat: 插入排序" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 插入排序" />
+    <MESSAGE value="feat: BFPRF算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: BFPRF算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
