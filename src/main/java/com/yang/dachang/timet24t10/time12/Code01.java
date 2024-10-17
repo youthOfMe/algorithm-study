@@ -9,8 +9,5 @@ public class Code01 {
 
     }
 
-    public static int getTarget(int[] arr) {
-
-    }
 
 }
