@@ -55,7 +55,7 @@ public class Code03 {
             int teamFirst = left + team * 5;
             mArr[team] = getMediums(arr, teamFirst, Math.min(right, teamFirst + 4));
         }
-        return bfprt(arr, 0, mArr.length - 1, mArr.length / 2);
+        return bfprt(mArr, 0, mArr.length - 1, mArr.length / 2);
     }
 
     private static int getMediums(int[] arr, int teamFirst, int teamLast) {
