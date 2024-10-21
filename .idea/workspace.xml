@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第三种解法 荷兰国旗，求出整个数组中第K大的数">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time16.Code03">
+  <component name="RunManager" selected="Application.Code04">
     <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code03" />
       <module name="algorithm" />
@@ -89,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time13.Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code01" />
+    <configuration name="Code04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time16.Code04" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time13.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,19 +142,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Code04" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code01" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time14.Code01" />
       <item itemvalue="Application.Code03" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code04" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time14.Code01" />
         <item itemvalue="Application.Code03" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code01" />
       </list>
     </recent_temporary>
   </component>
@@ -266,15 +266,7 @@
       <workItem from="1729206881836" duration="4681000" />
       <workItem from="1729293373752" duration="598000" />
       <workItem from="1729381176784" duration="3508000" />
-      <workItem from="1729467332891" duration="6288000" />
-    </task>
-    <task id="LOCAL-00174" summary="feat: 咖啡问题 - 第二问: 求出被子干净后的最早时间（动态规划）">
-      <option name="closed" value="true" />
-      <created>1727070881387</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1727070881387</updated>
+      <workItem from="1729467332891" duration="10611000" />
     </task>
     <task id="LOCAL-00175" summary="feat: 数组拆分为两个最接近的累加和 - 暴力递归">
       <option name="closed" value="true" />
@@ -660,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729467978694</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第三种解法 荷兰国旗，求出整个数组中第K大的数">
+      <option name="closed" value="true" />
+      <created>1729474016082</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1729474016082</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 实现可重复数单调栈打印数组中的左右最邻近比自己小的数" />
     <MESSAGE value="feat: 单调栈第一题" />
     <MESSAGE value="feat: 单调栈第二题" />
     <MESSAGE value="feat: 有一个二维矩阵，1可以组合为矩阵，问矩阵最大面积" />
@@ -703,7 +702,8 @@
     <MESSAGE value="feat: 完成BFPRT算法" />
     <MESSAGE value="feat: 第一种解法: 使用排序进行解决" />
     <MESSAGE value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决" />
+    <MESSAGE value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第三种解法 荷兰国旗，求出整个数组中第K大的数" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第三种解法 荷兰国旗，求出整个数组中第K大的数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -868,7 +868,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -897,6 +897,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code04.java</url>
+          <line>18</line>
+          <properties class="com.yang.dachang.timet24t10.time16.Code04" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
