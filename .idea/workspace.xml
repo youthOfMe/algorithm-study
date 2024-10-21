@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 第一种解法: 使用排序进行解决">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code02.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time16.Code01">
+  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time16.Code03">
     <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code03" />
       <module name="algorithm" />
@@ -91,19 +91,6 @@
     </configuration>
     <configuration name="com.yang.dachang.timet24t10.time13.Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code01" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time13.Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code02" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -141,20 +128,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.yang.dachang.timet24t10.time16.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time16.Code03" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code01" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time14.Code01" />
       <item itemvalue="Application.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code01" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code02" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time14.Code01" />
         <item itemvalue="Application.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code01" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time13.Code02" />
       </list>
     </recent_temporary>
   </component>
@@ -266,15 +266,7 @@
       <workItem from="1729206881836" duration="4681000" />
       <workItem from="1729293373752" duration="598000" />
       <workItem from="1729381176784" duration="3508000" />
-      <workItem from="1729467332891" duration="373000" />
-    </task>
-    <task id="LOCAL-00173" summary="feat: 咖啡问题 - 第二问: 求出被子干净后的最早时间（暴力递归）">
-      <option name="closed" value="true" />
-      <created>1727069956604</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1727069956604</updated>
+      <workItem from="1729467332891" duration="6288000" />
     </task>
     <task id="LOCAL-00174" summary="feat: 咖啡问题 - 第二问: 求出被子干净后的最早时间（动态规划）">
       <option name="closed" value="true" />
@@ -660,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729432344486</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决">
+      <option name="closed" value="true" />
+      <created>1729467978694</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1729467978694</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 实现无重复数据单调栈" />
     <MESSAGE value="feat: 实现可重复数单调栈打印数组中的左右最邻近比自己小的数" />
     <MESSAGE value="feat: 单调栈第一题" />
     <MESSAGE value="feat: 单调栈第二题" />
@@ -703,7 +702,8 @@
     <MESSAGE value="feat: 完成BFPRF算法" />
     <MESSAGE value="feat: 完成BFPRT算法" />
     <MESSAGE value="feat: 第一种解法: 使用排序进行解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 第一种解法: 使用排序进行解决" />
+    <MESSAGE value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数,第二种解法: 使用大根堆进行解决" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -860,6 +860,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time13/Code01.java</url>
           <line>19</line>
           <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time11/Code03.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t08t10/Code02.java</url>
