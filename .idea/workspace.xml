@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第四种解法 BFPRT算法，求出整个数组中第K大的数">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +75,13 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code04">
-    <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time13.Code03" />
+  <component name="RunManager" selected="Application.Code01">
+    <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time17.Code01" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time13.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,19 +142,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Code01" />
       <item itemvalue="Application.Code04" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code01" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time14.Code01" />
-      <item itemvalue="Application.Code03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code01" />
         <item itemvalue="Application.Code04" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code01" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time14.Code01" />
-        <item itemvalue="Application.Code03" />
       </list>
     </recent_temporary>
   </component>
@@ -268,15 +267,7 @@
       <workItem from="1729293373752" duration="598000" />
       <workItem from="1729381176784" duration="3508000" />
       <workItem from="1729467332891" duration="11328000" />
-      <workItem from="1729553227365" duration="2832000" />
-    </task>
-    <task id="LOCAL-00176" summary="feat: 数组拆分为两个最接近的累加和 - 暴力递归 &amp; 动态规划 - 数组设置全正数">
-      <option name="closed" value="true" />
-      <created>1727152677869</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1727152677869</updated>
+      <workItem from="1729553227365" duration="7647000" />
     </task>
     <task id="LOCAL-00177" summary="feat: 拆分数组 =&gt; 两个数组长度相似 - 暴力递归">
       <option name="closed" value="true" />
@@ -662,7 +653,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729478317168</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第四种解法 BFPRT算法，求出整个数组中第K大的数">
+      <option name="closed" value="true" />
+      <created>1729556110072</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1729556110072</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,6 +871,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time16/Code03.java</url>
           <line>47</line>
           <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code01.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code01.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t08t10/Code02.java</url>
