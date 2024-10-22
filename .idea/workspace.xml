@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 求数组中前k大的数据,快速排序概率性解决问题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code02.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time17/Code02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,15 +267,8 @@
       <workItem from="1729293373752" duration="598000" />
       <workItem from="1729381176784" duration="3508000" />
       <workItem from="1729467332891" duration="11328000" />
-      <workItem from="1729553227365" duration="13337000" />
-    </task>
-    <task id="LOCAL-00178" summary="feat: 拆分数组 =&gt; 两个数组长度相似 - 动态递归">
-      <option name="closed" value="true" />
-      <created>1727159072301</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1727159072301</updated>
+      <workItem from="1729553227365" duration="14047000" />
+      <workItem from="1729639109331" duration="2218000" />
     </task>
     <task id="LOCAL-00179" summary="feat: 拆分数组 =&gt; 两个数组长度相似 - 动态递归">
       <option name="closed" value="true" />
@@ -662,7 +654,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729561092763</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化">
+      <option name="closed" value="true" />
+      <created>1729567906866</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1729567906866</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +680,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 有一个二维矩阵，1可以组合为矩阵，问矩阵最大面积" />
     <MESSAGE value="feat: 有一个二维矩阵，1可以组合为矩阵，求有多少个矩阵" />
     <MESSAGE value="feat: 单调栈：求数组中所有子数组的最小值的和" />
     <MESSAGE value="feat: 斐波那契数列logN求解" />
@@ -705,7 +704,8 @@
     <MESSAGE value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第三种解法 荷兰国旗，求出整个数组中第K大的数" />
     <MESSAGE value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第四种解法 BFPRT算法，求出整个数组中第K大的数" />
     <MESSAGE value="feat: 求数组中前k大的数据,快速排序概率性解决问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 求数组中前k大的数据,快速排序概率性解决问题" />
+    <MESSAGE value="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
