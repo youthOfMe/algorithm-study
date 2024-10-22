@@ -27,7 +27,7 @@ public class Code03 {
             return null;
         }
         final int N = arr.length;
-        int[] res = new int[k];
+        int[] res = new int[N];
         int target = arr[0];
         int left = 0;
         int right = N - 1;
@@ -43,25 +43,18 @@ public class Code03 {
                 left = kForArr[1];
             }
         }
-        Arrays.fill(res, -1);
         int resIndex = 0;
         for (int index = N - 1; index >= 0; index--) {
             if (arr[index] > target) {
                 res[resIndex++] = arr[index];
             }
-            if (resIndex == k) {
-                resIndex = 0;
-            }
         }
-        resIndex = 0;
         while (resIndex < k) {
-            if (res[resIndex] == -1) {
-                res[resIndex] = target;
-            }
-            resIndex++;
+            res[resIndex++] = target;
         }
+        res = Arrays.stream(res).limit(resIndex).toArray();
         mergeSort(res, 0, res.length - 1);
-        return res;
+        return Arrays.stream(res).limit(k).toArray();
     }
 
     // 归并排序

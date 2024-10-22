@@ -1,11 +1,7 @@
 package com.yang.dachang.timet24t10.time16;
 
-import com.sun.corba.se.impl.orbutil.RepositoryIdUtility;
-import com.sun.org.apache.bcel.internal.generic.LREM;
-
-import java.lang.annotation.Target;
-import java.net.FileNameMap;
-import java.util.EnumMap;
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 /**
  * 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数
@@ -18,15 +14,65 @@ public class Code04 {
 
     public static void main(String[] args) {
         int[] arr = {1, 8, 9, 5, 6, 5, 8, 2, 0, 0, 3, 25, 62, 2, 5, 5};
-        System.out.println(bfprt(arr, 0, arr.length - 1, 9));
+        System.out.println(Arrays.toString(getTarget(arr, 5)));
     }
 
     private static int[] getTarget(int[] arr, int k) {
         if (arr == null || arr.length < 2) return null;
-        int[] res = new int[k];
         final int N = arr.length;
+        int[] res = new int[N];
         int rank = N - 1 - k;
-        return null;
+        int target = bfprt(arr, 0, N - 1, rank);
+
+        // 进行填充数据
+        int resIndex = 0;
+        for (int index = 0; index < N; index++) {
+            if (arr[index] > target) {
+                res[resIndex++] = arr[index];
+            }
+        }
+        while (resIndex < k) {
+            res[resIndex++] = target;
+        }
+
+        // 截取数据
+        res = Arrays.stream(res).limit(resIndex).toArray();
+        mergeSort(arr, 0, N - 1);
+        // 对数据进行排序
+        return Arrays.stream(res).limit(k).toArray();
+    }
+
+    // 数据排序 -> 归并排序
+    private static void mergeSort(int[] arr, int left, int right) {
+        if (left >= right) return;
+        int mid = left + ((right - left) >> 1);
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+
+    private static void merge(int[] arr, int left, int mid, int right) {
+        int p1 = left;
+        int p2 = mid + 1;
+        int index = 0;
+        int size = right - left + 1;
+        int[] help = new int[size];
+
+        while (p1 <= mid && p2 <= right) {
+            help[index++] = arr[p2] >= arr[p1] ? arr[p2++] : arr[p1++];
+        }
+
+        while (p1 <= mid) {
+            help[index++] = arr[p1++];
+        }
+
+        while (p2 <= right) {
+            help[index++] = arr[p2++];
+        }
+
+        for (index = 0; index < size; index++) {
+            arr[index + left] = help[index];
+        }
     }
 
     // BFPRT算法
