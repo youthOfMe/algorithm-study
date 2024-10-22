@@ -53,8 +53,8 @@ public class Code01 {
         int rank =  k - 1;
 
         while (true) {
-            // int random = (int) (Math.random() * (right - left + 1)) + left;
-            // swap(arr, right, random);
+            int random = (int) (Math.random() * (right - left + 1)) + left;
+            swap(arr, right, random);
             while (index < more) {
                 if (arr[index] < arr[right]) {
                     swap(arr, index++, ++less);
