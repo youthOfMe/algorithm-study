@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time18/Code01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time18/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time18/TestClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.yang.dachang.timet24t10.time18.Code01">
+  <component name="RunManager" selected="Application.TestClient">
     <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time17.Code01" />
       <module name="algorithm" />
@@ -115,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time16.Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time16.Code03" />
+    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time18.TestClient" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time16.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,19 +143,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.TestClient" />
       <item itemvalue="Application.com.yang.dachang.timet24t10.time18.Code01" />
       <item itemvalue="Application.Code01" />
       <item itemvalue="Application.Code02" />
       <item itemvalue="Application.Code04" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestClient" />
         <item itemvalue="Application.com.yang.dachang.timet24t10.time18.Code01" />
         <item itemvalue="Application.Code02" />
         <item itemvalue="Application.Code01" />
         <item itemvalue="Application.Code04" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time16.Code03" />
       </list>
     </recent_temporary>
   </component>
@@ -268,15 +269,7 @@
       <workItem from="1729381176784" duration="3508000" />
       <workItem from="1729467332891" duration="11328000" />
       <workItem from="1729553227365" duration="14047000" />
-      <workItem from="1729639109331" duration="7650000" />
-    </task>
-    <task id="LOCAL-00180" summary="feat: 拆分数组 =&gt; 两个数组长度相似 - 动态递归 &amp; 暴力递归">
-      <option name="closed" value="true" />
-      <created>1727244137658</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1727244137658</updated>
+      <workItem from="1729639109331" duration="10256000" />
     </task>
     <task id="LOCAL-00181" summary="feat: N皇后问题">
       <option name="closed" value="true" />
@@ -662,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729641352641</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化">
+      <option name="closed" value="true" />
+      <created>1729646931602</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1729646931602</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
