@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time18/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time18/TestClient.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 测试蓄水池算法的概率">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Code02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Code03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +34,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../devlop/apache-maven-3.6.1" />
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../../devlop/apache-maven-3.6.1" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
         <option name="userSettingsFile" value="D:\devlop\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -44,25 +51,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2862069&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2862069",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Code03.executor": "Debug",
+    "应用程序.com.yang.dachang.timet24t10.time19.Code02.executor": "Run",
+    "应用程序.com.yang.dachang.timet24t10.time19.TestClient.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yang.dachang.timet24t08t25" />
@@ -76,26 +87,13 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestClient">
-    <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time17.Code01" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.Code03">
     <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time17.Code02" />
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time19.Code02" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time17.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time16.Code04" />
+    <configuration name="Code03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time19.Code03" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time16.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,20 +140,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.yang.dachang.timet24t10.time19.TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time19.TestClient" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.TestClient" />
-      <item itemvalue="Application.com.yang.dachang.timet24t10.time18.Code01" />
-      <item itemvalue="Application.Code01" />
-      <item itemvalue="Application.Code02" />
-      <item itemvalue="Application.Code04" />
+      <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.Code02" />
+      <item itemvalue="应用程序.Code03" />
+      <item itemvalue="应用程序.TestClient" />
+      <item itemvalue="应用程序.com.yang.dachang.timet24t10.time18.Code01" />
+      <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.TestClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestClient" />
-        <item itemvalue="Application.com.yang.dachang.timet24t10.time18.Code01" />
-        <item itemvalue="Application.Code02" />
-        <item itemvalue="Application.Code01" />
-        <item itemvalue="Application.Code04" />
+        <item itemvalue="应用程序.Code03" />
+        <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.TestClient" />
+        <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.Code02" />
       </list>
     </recent_temporary>
   </component>
@@ -270,14 +279,6 @@
       <workItem from="1729467332891" duration="11328000" />
       <workItem from="1729553227365" duration="14047000" />
       <workItem from="1729639109331" duration="10256000" />
-    </task>
-    <task id="LOCAL-00181" summary="feat: N皇后问题">
-      <option name="closed" value="true" />
-      <created>1727327772574</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1727327772574</updated>
     </task>
     <task id="LOCAL-00182" summary="feat: 滑动窗口第一题 - 暴力递归">
       <option name="closed" value="true" />
@@ -663,7 +664,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729646931602</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="feat: 测试蓄水池算法的概率">
+      <option name="closed" value="true" />
+      <created>1729730436413</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1729730436413</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,8 +690,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 有一个二维矩阵，1可以组合为矩阵，求有多少个矩阵" />
-    <MESSAGE value="feat: 单调栈：求数组中所有子数组的最小值的和" />
     <MESSAGE value="feat: 斐波那契数列logN求解" />
     <MESSAGE value="feat: 农场母牛生牛问题logN求解" />
     <MESSAGE value="feat: 线性代数 =&gt; 达标字符串问题logN求解" />
@@ -706,7 +713,9 @@
     <MESSAGE value="feat: 在N个无序数组arr中, 给定一个整数K, 返回TOP K个最大的数, 第四种解法 BFPRT算法，求出整个数组中第K大的数" />
     <MESSAGE value="feat: 求数组中前k大的数据,快速排序概率性解决问题" />
     <MESSAGE value="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化" />
+    <MESSAGE value="feat: 实现大根堆" />
+    <MESSAGE value="feat: 测试蓄水池算法的概率" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 测试蓄水池算法的概率" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,6 +893,11 @@
           <line>69</line>
           <option name="timeStamp" value="139" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t08t10/Code02.java</url>
           <line>7</line>
@@ -917,6 +931,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algorithm$com_yang_dachang_timet24t8t04_Code01.ic" NAME="com.yang.dachang.timet24t8t04.Code01 Coverage Results" MODIFIED="1722817793445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
