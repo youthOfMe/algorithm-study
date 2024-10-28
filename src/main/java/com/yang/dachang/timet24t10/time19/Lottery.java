@@ -49,8 +49,6 @@ public class Lottery {
     
     // 用户抽奖 -> 要加锁
     private static void lottery(String name) {
-
-
         // 先绝对同步 -> 一会再修改
         synchronized (Lottery.class) {
             int num = count.incrementAndGet();

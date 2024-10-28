@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 测试蓄水池算法的概率">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Code02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Code03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Util.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 实现简易的蓄水池算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;youthOfMe&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:youthOfMe/algorithm-study.git&quot;,
+    &quot;accountId&quot;: &quot;b961a07c-37e0-410a-bc0a-ab667f51e3c1&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -59,6 +65,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +76,7 @@
     "project.structure.side.proportion": "0.2862069",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true",
+    "应用程序.Code01.executor": "Run",
     "应用程序.Code03.executor": "Debug",
     "应用程序.com.yang.dachang.timet24t10.time19.Code02.executor": "Run",
     "应用程序.com.yang.dachang.timet24t10.time19.TestClient.executor": "Run"
@@ -87,13 +95,13 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Code03">
-    <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time19.Code02" />
+  <component name="RunManager" selected="应用程序.Code01">
+    <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time20.Code01" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time19.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,7 +162,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.Code02" />
+      <item itemvalue="应用程序.Code01" />
       <item itemvalue="应用程序.Code03" />
       <item itemvalue="应用程序.TestClient" />
       <item itemvalue="应用程序.com.yang.dachang.timet24t10.time18.Code01" />
@@ -162,11 +170,19 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Code01" />
         <item itemvalue="应用程序.Code03" />
         <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.TestClient" />
-        <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.Code02" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -279,14 +295,9 @@
       <workItem from="1729467332891" duration="11328000" />
       <workItem from="1729553227365" duration="14047000" />
       <workItem from="1729639109331" duration="10256000" />
-    </task>
-    <task id="LOCAL-00182" summary="feat: 滑动窗口第一题 - 暴力递归">
-      <option name="closed" value="true" />
-      <created>1727331676430</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1727331676430</updated>
+      <workItem from="1729899552318" duration="8740000" />
+      <workItem from="1730024125307" duration="1240000" />
+      <workItem from="1730087849457" duration="1201000" />
     </task>
     <task id="LOCAL-00183" summary="feat: 滑动窗口第一题 - 双端队列优化">
       <option name="closed" value="true" />
@@ -672,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729730436413</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="feat: 实现简易的蓄水池算法">
+      <option name="closed" value="true" />
+      <created>1729738259070</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1729738259070</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,7 +709,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 斐波那契数列logN求解" />
     <MESSAGE value="feat: 农场母牛生牛问题logN求解" />
     <MESSAGE value="feat: 线性代数 =&gt; 达标字符串问题logN求解" />
     <MESSAGE value="feat: 暴力求解第字串存在的最先位置" />
@@ -715,7 +733,8 @@
     <MESSAGE value="feat: 求数组中前k大的数据,BFPRT算法解决 -&gt; 将概率化转化为确定化" />
     <MESSAGE value="feat: 实现大根堆" />
     <MESSAGE value="feat: 测试蓄水池算法的概率" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 测试蓄水池算法的概率" />
+    <MESSAGE value="feat: 实现简易的蓄水池算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 实现简易的蓄水池算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -893,11 +912,6 @@
           <line>69</line>
           <option name="timeStamp" value="139" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t08t10/Code02.java</url>
           <line>7</line>
@@ -924,6 +938,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java</url>
+          <line>7</line>
+          <properties class="com.yang.dachang.timet24t10.time20.Code01" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="146" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
