@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 实现简易的蓄水池算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: morris前置-递归遍历二叉树">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time19/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +77,7 @@
     "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true",
     "应用程序.Code01.executor": "Run",
+    "应用程序.Code02.executor": "Run",
     "应用程序.Code03.executor": "Debug",
     "应用程序.com.yang.dachang.timet24t10.time19.Code02.executor": "Run",
     "应用程序.com.yang.dachang.timet24t10.time19.TestClient.executor": "Run"
@@ -95,9 +96,22 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Code01">
+  <component name="RunManager" selected="应用程序.Code02">
     <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time20.Code01" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time20.Code02" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -115,19 +129,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yang.dachang.timet24t10.time19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time18.TestClient" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +164,14 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.Code01" />
+      <item itemvalue="应用程序.Code02" />
       <item itemvalue="应用程序.Code03" />
-      <item itemvalue="应用程序.TestClient" />
       <item itemvalue="应用程序.com.yang.dachang.timet24t10.time18.Code01" />
       <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.TestClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Code02" />
         <item itemvalue="应用程序.Code01" />
         <item itemvalue="应用程序.Code03" />
         <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.TestClient" />
@@ -297,15 +299,7 @@
       <workItem from="1729639109331" duration="10256000" />
       <workItem from="1729899552318" duration="8740000" />
       <workItem from="1730024125307" duration="1240000" />
-      <workItem from="1730087849457" duration="1201000" />
-    </task>
-    <task id="LOCAL-00183" summary="feat: 滑动窗口第一题 - 双端队列优化">
-      <option name="closed" value="true" />
-      <created>1727332855952</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1727332855952</updated>
+      <workItem from="1730087849457" duration="5427000" />
     </task>
     <task id="LOCAL-00184" summary="feat: 滑动窗口第一题 - 双端队列优化">
       <option name="closed" value="true" />
@@ -691,7 +685,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729738259070</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="feat: morris前置-递归遍历二叉树">
+      <option name="closed" value="true" />
+      <created>1730089412548</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1730089412549</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 农场母牛生牛问题logN求解" />
     <MESSAGE value="feat: 线性代数 =&gt; 达标字符串问题logN求解" />
     <MESSAGE value="feat: 暴力求解第字串存在的最先位置" />
     <MESSAGE value="feat: 乞丐版KMP算法 -&gt; 求next数组慢" />
@@ -734,7 +735,8 @@
     <MESSAGE value="feat: 实现大根堆" />
     <MESSAGE value="feat: 测试蓄水池算法的概率" />
     <MESSAGE value="feat: 实现简易的蓄水池算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 实现简易的蓄水池算法" />
+    <MESSAGE value="feat: morris前置-递归遍历二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: morris前置-递归遍历二叉树" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

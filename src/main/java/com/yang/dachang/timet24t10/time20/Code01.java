@@ -23,7 +23,7 @@ public class Code01 {
     }
 
     // 二叉树结构
-    public static class TreeNode {
+    private static class TreeNode {
         public int value;
         public TreeNode left;
         public TreeNode right;
