@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: 完成N皇后方法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time21/Code01.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: morris前置 -&gt; 修复递归序迭代版">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time21/Code02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,15 +302,7 @@
       <workItem from="1729899552318" duration="8740000" />
       <workItem from="1730024125307" duration="1240000" />
       <workItem from="1730087849457" duration="9057000" />
-      <workItem from="1730168167183" duration="4131000" />
-    </task>
-    <task id="LOCAL-00186" summary="feat: 滑动窗口第二题 -&gt; 暴力 O(n3)">
-      <option name="closed" value="true" />
-      <created>1727414916657</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1727414916657</updated>
+      <workItem from="1730168167183" duration="7054000" />
     </task>
     <task id="LOCAL-00187" summary="feat: 滑动窗口第三题, 加油站问题 -&gt; 暴力解决">
       <option name="closed" value="true" />
@@ -697,7 +688,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730169294978</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="feat: morris前置 -&gt; 修复递归序迭代版">
+      <option name="closed" value="true" />
+      <created>1730172566807</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1730172566807</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -715,7 +714,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 乞丐版KMP算法 -&gt; 求next数组慢" />
     <MESSAGE value="feat: manacher算法" />
     <MESSAGE value="feat: 复习KMP算法和manacher算法" />
     <MESSAGE value="feat: KMP算法第一题 =&gt; 是否互为旋转串" />
@@ -740,7 +738,8 @@
     <MESSAGE value="feat: morris前置-递归遍历二叉树" />
     <MESSAGE value="feat: morris前置-迭代方式实现递归序" />
     <MESSAGE value="feat: 完成N皇后方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 完成N皇后方法" />
+    <MESSAGE value="feat: morris前置 -&gt; 修复递归序迭代版" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: morris前置 -&gt; 修复递归序迭代版" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
