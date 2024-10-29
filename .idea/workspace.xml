@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: morris前置-递归遍历二叉树">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code02.java" afterDir="false" />
+    <list default="true" id="920dfff0-ccbe-4622-a5d6-57f27ad8bbd8" name="Changes" comment="feat: morris前置-迭代方式实现递归序">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/dachang/timet24t10/time20/Code01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,32 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2862069",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.Code01.executor": "Run",
-    "应用程序.Code02.executor": "Run",
-    "应用程序.Code03.executor": "Debug",
-    "应用程序.com.yang.dachang.timet24t10.time19.Code02.executor": "Run",
-    "应用程序.com.yang.dachang.timet24t10.time19.TestClient.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2862069&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.Code01.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Code02.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Code03.executor&quot;: &quot;Debug&quot;,
+    &quot;应用程序.com.yang.dachang.timet24t10.time19.Code02.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.com.yang.dachang.timet24t10.time19.TestClient.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yang.dachang.timet24t08t25" />
@@ -96,7 +96,7 @@
       <command value="c" />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Code02">
+  <component name="RunManager" selected="应用程序.Code04">
     <configuration name="Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time20.Code01" />
       <module name="algorithm" />
@@ -136,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.yang.dachang.timet24t10.time18.Code01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time18.Code01" />
+    <configuration name="Code04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yang.dachang.timet24t10.time20.Code04" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yang.dachang.timet24t10.time18.*" />
+          <option name="PATTERN" value="com.yang.dachang.timet24t10.time20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,14 +163,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.Code04" />
       <item itemvalue="应用程序.Code01" />
       <item itemvalue="应用程序.Code02" />
       <item itemvalue="应用程序.Code03" />
-      <item itemvalue="应用程序.com.yang.dachang.timet24t10.time18.Code01" />
       <item itemvalue="应用程序.com.yang.dachang.timet24t10.time19.TestClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Code04" />
         <item itemvalue="应用程序.Code02" />
         <item itemvalue="应用程序.Code01" />
         <item itemvalue="应用程序.Code03" />
@@ -299,15 +300,8 @@
       <workItem from="1729639109331" duration="10256000" />
       <workItem from="1729899552318" duration="8740000" />
       <workItem from="1730024125307" duration="1240000" />
-      <workItem from="1730087849457" duration="5427000" />
-    </task>
-    <task id="LOCAL-00184" summary="feat: 滑动窗口第一题 - 双端队列优化">
-      <option name="closed" value="true" />
-      <created>1727411896505</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1727411896505</updated>
+      <workItem from="1730087849457" duration="9057000" />
+      <workItem from="1730168167183" duration="976000" />
     </task>
     <task id="LOCAL-00185" summary="feat: 滑动窗口第二题 -&gt; 暴力 O(n3)">
       <option name="closed" value="true" />
@@ -693,7 +687,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730089412549</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="feat: morris前置-迭代方式实现递归序">
+      <option name="closed" value="true" />
+      <created>1730095450976</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1730095450976</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +713,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 线性代数 =&gt; 达标字符串问题logN求解" />
     <MESSAGE value="feat: 暴力求解第字串存在的最先位置" />
     <MESSAGE value="feat: 乞丐版KMP算法 -&gt; 求next数组慢" />
     <MESSAGE value="feat: manacher算法" />
@@ -736,7 +737,8 @@
     <MESSAGE value="feat: 测试蓄水池算法的概率" />
     <MESSAGE value="feat: 实现简易的蓄水池算法" />
     <MESSAGE value="feat: morris前置-递归遍历二叉树" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: morris前置-递归遍历二叉树" />
+    <MESSAGE value="feat: morris前置-迭代方式实现递归序" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: morris前置-迭代方式实现递归序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
