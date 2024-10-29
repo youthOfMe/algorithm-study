@@ -18,7 +18,7 @@ public class Code02 {
         TreeNode treeNode4 = new TreeNode(4);
         TreeNode treeNode5 = new TreeNode(5);
         treeNode2.left = treeNode4;
-        treeNode2.right = treeNode5;
+        // treeNode2.right = treeNode5;
 
         // 先序遍历
         process(treeNode);
@@ -61,7 +61,7 @@ public class Code02 {
             }
 
             // 判断是否有右节点 -> 没有就再次进行打印
-            if (curNode.right == null) {
+            if (curNode.right == null && curNode.left == null) {
                 System.out.println(curNode.value);
             }
 
@@ -71,14 +71,17 @@ public class Code02 {
             }
 
             // 判断栈中是否有数据 && 队列中没有数据
-            if (!stack.isEmpty() && queue.isEmpty()) {
+            while (!stack.isEmpty() && queue.isEmpty()) {
                 TreeNode node = stack.pop();
                 System.out.println(node.value);
                 // 判断是否有右节点, 有就加入到栈中
                 if (node.right != null) {
                     queue.add(node.right);
+                    // 为弹出的栈值进行赋值, 方便下次进行弹出数据
+                    curStackVal = node.value;
+                } else {
+                    System.out.println(node.value);
                 }
-                curStackVal = node.value;
             }
         }
 
