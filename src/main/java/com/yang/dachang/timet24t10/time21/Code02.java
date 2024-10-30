@@ -5,6 +5,23 @@ package com.yang.dachang.timet24t10.time21;
  */
 public class Code02 {
 
+    public static void main(String[] args) {
+        TreeNode treeNode = new TreeNode(1);
+        TreeNode treeNode2 = new TreeNode(2);
+        TreeNode treeNode3 = new TreeNode(3);
+        treeNode.left = treeNode2;
+        treeNode.right = treeNode3;
+        TreeNode treeNode4 = new TreeNode(4);
+        TreeNode treeNode5 = new TreeNode(5);
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
+
+        preMorris(treeNode);
+        System.out.println("=== 中序遍历 ===");
+        inMorris(treeNode);
+        System.out.println("=== 后序遍历 ===");
+    }
+
     /**
      * 二叉树
      */
@@ -68,6 +85,70 @@ public class Code02 {
                } else {
                    mostRight.right = null;
                }
+            }
+            cur = cur.right;
+        }
+    }
+
+    /**
+     * 使用morris序实现先序遍历
+     *
+     * @param head
+     */
+    public static void preMorris(TreeNode head) {
+        if (head == null) return;
+        TreeNode cur = head;
+        TreeNode mostRight = null;
+        while (cur != null) {
+            mostRight = cur.left;
+            if (mostRight != null) {
+                while (mostRight.right != null && mostRight.right != cur) {
+                    mostRight = mostRight.right;
+                }
+                if (mostRight.right == null) {
+                    System.out.println(cur.value);
+                    mostRight.right = cur;
+                    cur = cur.left;
+                    continue;
+                } else {
+                    mostRight.right = null;
+                }
+            } else {
+                System.out.println(cur.value);
+            }
+            cur = cur.right;
+        }
+    }
+
+    /**
+     * 使用morris遍历实现中序遍历
+     *
+     * @param head
+     */
+    public static void inMorris(TreeNode head) {
+        if (head == null) return;;
+        TreeNode cur = head;
+        TreeNode mostRight = null;
+        while (cur != null) {
+            mostRight = cur.left;
+            // 有左树
+            if (mostRight != null) {
+                while (mostRight.right != null && mostRight.right != cur) {
+                    mostRight = mostRight.right;
+                }
+
+                // 若为空则为第一次来到它自己, 不为空则第二次来到自己
+                if (mostRight.right == null) {
+                    mostRight.right = cur;
+                    cur = cur.left;
+                    continue;
+                } else {
+                    System.out.println(cur.value);
+                    mostRight.right = null;
+                }
+            } else {
+                // 没有左树
+                System.out.println(cur.value);
             }
             cur = cur.right;
         }
